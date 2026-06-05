@@ -123,7 +123,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 
 <div align="center">
 
-<img width="92%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrrAmissah&theme=github_dark" alt="Prince Kofi Frimpong Amissah GitHub profile details" />
+<img width="92%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrrAmissah&theme=github_dark" alt="Prince Kofi Frimpong Amissah GitHub contribution graph" />
 
 <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MrrAmissah&theme=github_dark" alt="Prince Kofi Frimpong Amissah GitHub stats" />
 <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MrrAmissah&theme=github_dark" alt="Most committed languages" />
