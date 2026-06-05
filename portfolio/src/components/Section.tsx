@@ -14,13 +14,13 @@ export function Section({ id, eyebrow, title, children }: SectionProps) {
   return (
     <motion.section
       id={id}
-      className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20"
+      className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-12"
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.55, ease: "easeOut" }}
     >
-      <div className="mb-8 max-w-3xl">
+      <div className="mb-6 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
           {eyebrow}
         </p>

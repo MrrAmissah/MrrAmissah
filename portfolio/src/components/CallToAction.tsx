@@ -5,7 +5,7 @@ import { ArrowRight, Github } from "lucide-react";
 
 export function CallToAction() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 sm:py-16">
+    <section className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,7 +13,7 @@ export function CallToAction() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative overflow-hidden rounded-lg bg-navy px-6 py-14 text-center shadow-xl sm:px-10"
       >
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(17,155,232,0.24),transparent_42%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(0,108,255,0.28),transparent_42%)]" />
 
         <div className="relative">
           <h2 className="mx-auto max-w-2xl text-3xl font-semibold text-balance text-paper sm:text-4xl">

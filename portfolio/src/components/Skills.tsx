@@ -10,7 +10,7 @@ const groups = [
   {
     title: "Backend & data",
     Icon: Database,
-    skills: ["Node.js", "PostgreSQL", "Prisma", "Paystack / Clerk"],
+    skills: ["Node.js", "PostgreSQL", "Prisma", "Chipper Cash / Clerk"],
   },
   {
     title: "Infrastructure & networking",

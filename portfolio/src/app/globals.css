@@ -3,18 +3,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f6f9fd;
-  --foreground: #071b35;
-  --paper: #f6f9fd;
+  --background: #EFF7FF;
+  --foreground: #071B3A;
+  --paper: #EFF7FF;
   --surface: #ffffff;
-  --surface-muted: #e8f2ff;
-  --ink: #071b35;
-  --navy: #012552;
-  --accent: #119be8;
-  --cyan: #11c7d6;
+  --surface-muted: #EFF7FF;
+  --ink: #071B3A;
+  --navy: #071B3A;
+  --accent: #006CFF;
+  --cyan: #0EA5E9;
+  --muted: #4B5F7A;
   --gold: #f4a11c;
   --coral: #ff6b5f;
-  --line: #c9d9ea;
+  --line: #CFE3F7;
 }
 
 @theme inline {
@@ -27,6 +28,7 @@
   --color-navy: var(--navy);
   --color-accent: var(--accent);
   --color-cyan: var(--cyan);
+  --color-muted: var(--muted);
   --color-gold: var(--gold);
   --color-coral: var(--coral);
   --color-line: var(--line);
@@ -35,13 +37,14 @@
 }
 
 .dark {
-  --background: #06172c;
+  --background: #071B3A;
   --foreground: #eff6ff;
   --surface: #0b2442;
-  --surface-muted: #0f3158;
-  --navy: #00152f;
-  --accent: #27aaf0;
-  --cyan: #24d3df;
+  --surface-muted: #102f56;
+  --navy: #071B3A;
+  --accent: #006CFF;
+  --cyan: #0EA5E9;
+  --muted: #9fb1c7;
   --gold: #ffb43d;
   --coral: #ff7c70;
   --line: rgba(239, 246, 255, 0.14);
@@ -56,8 +59,8 @@ html {
 
 body {
   background:
-    linear-gradient(180deg, rgba(17, 199, 214, 0.08), transparent 22rem),
-    linear-gradient(90deg, rgba(244, 161, 28, 0.05), transparent 34rem),
+    linear-gradient(180deg, rgba(14, 165, 233, 0.08), transparent 22rem),
+    linear-gradient(90deg, rgba(0, 108, 255, 0.05), transparent 34rem),
     var(--background);
   color: var(--foreground);
   font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;

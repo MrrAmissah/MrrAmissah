@@ -85,6 +85,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <h3>Ghana PAYE Calculator</h3>
       <p>Payroll calculator for 2026 GRA bands, SSNIT Tier 1, Tier 3 relief, and printable payslips.</p>
       <p>
+        <a href="https://ghana-paye-calculator.vercel.app/">Live</a> ·
         <a href="https://github.com/MrrAmissah/Ghana-Paye-Calculator">Code</a>
       </p>
       <p><code>React</code> <code>TypeScript</code> <code>Tailwind</code> <code>Payroll</code></p>
@@ -96,6 +97,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <h3>Subnet Calculator</h3>
       <p>IPv4 subnet/CIDR utility with binary breakdowns and subnet splitting.</p>
       <p>
+        <a href="https://subnet-calculator-jade.vercel.app/">Live</a> ·
         <a href="https://github.com/MrrAmissah/Subnet-Calculator">Code</a>
       </p>
       <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Networking</code></p>

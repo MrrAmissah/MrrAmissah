@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
@@ -19,8 +20,23 @@ export function Header() {
           aria-label="Prince Kofi Frimpong Amissah, back to top"
           className="group inline-flex items-center rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-4 focus:ring-offset-paper dark:focus:ring-offset-background"
         >
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent text-sm font-bold text-white shadow-sm shadow-accent/30 transition group-hover:-translate-y-0.5 group-hover:bg-cyan">
-            PA
+          <span className="relative block h-10 w-10 overflow-hidden rounded-lg border border-line bg-white shadow-sm transition group-hover:-translate-y-0.5 dark:border-paper/10 dark:bg-navy">
+            <Image
+              src="/brand-logo-light.png"
+              alt="Prince Kofi Amissah logo"
+              fill
+              priority
+              sizes="40px"
+              className="object-cover dark:hidden"
+            />
+            <Image
+              src="/brand-logo-dark.png"
+              alt="Prince Kofi Amissah logo"
+              fill
+              priority
+              sizes="40px"
+              className="hidden object-cover dark:block"
+            />
           </span>
         </a>
         <div className="flex items-center gap-2">

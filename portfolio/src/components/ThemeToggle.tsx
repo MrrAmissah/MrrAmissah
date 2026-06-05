@@ -1,9 +1,11 @@
 "use client";
 
+import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
   const [isDark, setIsDark] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem("theme");
@@ -12,6 +14,7 @@ export function ThemeToggle() {
 
     document.documentElement.classList.toggle("dark", shouldUseDark);
     setIsDark(shouldUseDark);
+    setMounted(true);
   }, []);
 
   function toggleTheme() {
@@ -28,25 +31,11 @@ export function ThemeToggle() {
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line bg-paper/80 text-ink shadow-sm backdrop-blur transition hover:border-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-paper dark:bg-background/80 dark:text-paper dark:focus:ring-offset-background"
     >
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        className="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-      >
-        {isDark ? (
-          <path d="M20 15.6A8 8 0 0 1 8.4 4 7 7 0 1 0 20 15.6Z" />
-        ) : (
-          <>
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
-          </>
-        )}
-      </svg>
+      {mounted && isDark ? (
+        <Sun aria-hidden="true" className="h-5 w-5" />
+      ) : (
+        <Moon aria-hidden="true" className="h-5 w-5" />
+      )}
     </button>
   );
 }

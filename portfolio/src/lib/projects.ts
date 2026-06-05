@@ -14,6 +14,7 @@ export const projects: Project[] = [
     description:
       "IPv4 subnet and CIDR utility with binary breakdowns and subnet splitting.",
     stack: ["React", "TypeScript", "Vite", "Tailwind", "Vitest"],
+    liveUrl: "https://subnet-calculator-jade.vercel.app/",
     repoUrl: "https://github.com/MrrAmissah/Subnet-Calculator",
     image: "/projects/subnet-calculator.png",
     accent: "Networking",
@@ -23,6 +24,7 @@ export const projects: Project[] = [
     description:
       "Ghana payroll calculator for 2026 GRA bands, SSNIT Tier 1, Tier 3 relief, and printable payslips.",
     stack: ["React", "TypeScript", "Vite", "Tailwind"],
+    liveUrl: "https://ghana-paye-calculator.vercel.app/",
     repoUrl: "https://github.com/MrrAmissah/Ghana-Paye-Calculator",
     image: "/projects/ghana-paye-calculator.png",
     accent: "Ghana finance",

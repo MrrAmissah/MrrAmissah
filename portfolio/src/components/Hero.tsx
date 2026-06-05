@@ -11,7 +11,7 @@ export function Hero() {
       className="relative isolate overflow-hidden border-b border-line bg-paper dark:bg-background"
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,var(--paper)_0%,var(--paper)_54%,rgba(17,155,232,0.10)_54%,rgba(17,199,214,0.14)_100%)] dark:bg-[linear-gradient(120deg,var(--background)_0%,var(--background)_54%,rgba(17,155,232,0.14)_54%,rgba(17,199,214,0.10)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(120deg,var(--paper)_0%,var(--paper)_54%,rgba(0,108,255,0.10)_54%,rgba(14,165,233,0.14)_100%)] dark:bg-[linear-gradient(120deg,var(--background)_0%,var(--background)_54%,rgba(0,108,255,0.16)_54%,rgba(14,165,233,0.10)_100%)]" />
       </div>
 
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 sm:min-h-[72svh] sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,0.74fr)]">
@@ -26,8 +26,11 @@ export function Hero() {
             Accra, Ghana
           </p>
 
-          <h1 className="mt-6 text-5xl font-semibold leading-[1.02] text-balance text-ink sm:text-6xl lg:text-7xl dark:text-paper">
-            Prince <span className="text-accent">Kofi Frimpong</span> Amissah
+          <h1 className="mt-6 text-[2.2rem] font-semibold leading-[1.04] text-ink sm:text-6xl dark:text-paper">
+            <span className="block">
+              Prince <span className="text-accent">Kofi</span>
+            </span>
+            <span className="block whitespace-nowrap">Frimpong Amissah</span>
           </h1>
 
           <p className="mt-5 max-w-xl text-lg leading-8 text-ink/72 sm:text-xl sm:leading-9 dark:text-paper/72">
@@ -89,7 +92,7 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
         >
-          <div className="absolute -inset-5 -z-10 rounded-[2.5rem] bg-[radial-gradient(circle_at_30%_20%,rgba(17,155,232,0.30),transparent_70%)] blur-2xl" />
+          <div className="absolute -inset-5 -z-10 rounded-[2.5rem] bg-[radial-gradient(circle_at_30%_20%,rgba(0,108,255,0.28),transparent_70%)] blur-2xl" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-surface shadow-2xl ring-1 ring-accent/20">
             <Image
               src="/prince.jpg"
@@ -99,6 +102,18 @@ export function Hero() {
               sizes="(min-width: 1024px) 24rem, (min-width: 640px) 21rem, 19rem"
               className="object-cover object-center"
             />
+          </div>
+          <div className="absolute -bottom-4 left-4 max-w-[14rem] rounded-lg border border-line bg-white/88 px-4 py-3 font-mono text-[0.72rem] leading-5 text-muted shadow-lg backdrop-blur-md dark:border-paper/10 dark:bg-navy/88 dark:text-paper/72 sm:-left-6 sm:bottom-8">
+            <p>
+              <span className="text-accent">const</span> build =
+              &quot;useful&quot;;
+            </p>
+            <p>
+              <span className="text-accent">trust</span>.ship(clearSystems);
+            </p>
+            <p className="text-ink/55 dark:text-paper/45">
+              {"// networks + fintech"}
+            </p>
           </div>
         </motion.div>
       </div>
