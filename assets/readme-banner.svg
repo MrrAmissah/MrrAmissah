@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Prince Kofi Frimpong Amissah profile banner</title>
+  <desc id="desc">A slim navy, blue, and cyan personal banner for a developer profile.</desc>
+  <rect width="1200" height="280" rx="28" fill="#eaf4ff"/>
+  <circle cx="74" cy="140" r="154" fill="#d8e9fb"/>
+  <g opacity=".28" fill="#001f4d">
+    <circle cx="18" cy="54" r="4"/>
+    <circle cx="48" cy="54" r="4"/>
+    <circle cx="78" cy="54" r="4"/>
+    <circle cx="18" cy="84" r="4"/>
+    <circle cx="48" cy="84" r="4"/>
+    <circle cx="78" cy="84" r="4"/>
+    <circle cx="18" cy="114" r="4"/>
+    <circle cx="48" cy="114" r="4"/>
+    <circle cx="78" cy="114" r="4"/>
+    <circle cx="18" cy="144" r="4"/>
+    <circle cx="48" cy="144" r="4"/>
+    <circle cx="78" cy="144" r="4"/>
+  </g>
+  <rect x="776" y="36" width="344" height="208" rx="28" fill="#001f4d"/>
+  <path d="M956 66h102a68 68 0 0 1 68 68v102H956V66Z" fill="#119be8"/>
+  <path d="M872 132h112v112H812v-52a60 60 0 0 1 60-60Z" fill="#11bfe3"/>
+  <path d="M1012 101h56" stroke="#eaf4ff" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <path d="M1022 128h72" stroke="#eaf4ff" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+  <path d="M840 204h92" stroke="#001f4d" stroke-width="8" stroke-linecap="round" opacity=".24"/>
+  <path d="M864 228h62" stroke="#001f4d" stroke-width="8" stroke-linecap="round" opacity=".18"/>
+  <text x="112" y="106" fill="#001f4d" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">
+    Prince Kofi Frimpong Amissah
+  </text>
+  <text x="114" y="150" fill="#073b7a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">
+    Information Systems / Networking / Full-Stack Developer
+  </text>
+  <text x="114" y="190" fill="#24577f" font-family="Inter, Arial, sans-serif" font-size="20">
+    Building practical tools for infrastructure, finance, and Ghanaian workflows.
+  </text>
+  <rect x="114" y="216" width="92" height="8" rx="4" fill="#11bfe3"/>
+  <rect x="216" y="216" width="70" height="8" rx="4" fill="#119be8"/>
+  <rect x="296" y="216" width="42" height="8" rx="4" fill="#f47b20"/>
+</svg>

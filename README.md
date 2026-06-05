@@ -1,11 +1,6 @@
 <div align="center">
 
-<img src="./Cover.png" alt="Trust is not a feature. It is the foundation. - Prince Kofi Frimpong Amissah" width="100%" />
-
-<br />
-<br />
-
-<img src="./assets/profile-bw.jpg" width="150" alt="Prince Kofi Frimpong Amissah" style="border-radius: 50%;" />
+<img src="./assets/readme-banner.svg" alt="Prince Kofi Frimpong Amissah - Information Systems, Networking, and Full-Stack Developer" width="100%" />
 
 # Prince Kofi Frimpong Amissah
 
