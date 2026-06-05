@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/readme-banner.svg" alt="Prince Kofi Frimpong Amissah - Information Systems, Networking, and Full-Stack Developer" width="100%" />
+<img src="./assets/readme-cover.png" alt="Systems, networks, and practical software banner" width="100%" />
 
 # Prince Kofi Frimpong Amissah
 
