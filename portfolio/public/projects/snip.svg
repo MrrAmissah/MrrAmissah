@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#f7f3ea"/>
+  <rect x="80" y="70" width="800" height="460" rx="28" fill="#32184f"/>
+  <text x="126" y="150" fill="#f7f3ea" font-family="Arial, sans-serif" font-size="54" font-weight="700">Snip</text>
+  <text x="126" y="194" fill="#d8b4fe" font-family="Arial, sans-serif" font-size="22" font-weight="700">Short links with click analytics</text>
+  <rect x="126" y="242" width="708" height="76" rx="38" fill="#f7f3ea"/>
+  <text x="162" y="289" fill="#32184f" font-family="Arial, sans-serif" font-size="26" font-weight="700">https://snipnow.vercel.app/kofi</text>
+  <rect x="126" y="366" width="192" height="94" rx="18" fill="#d8b4fe"/>
+  <rect x="354" y="366" width="192" height="94" rx="18" fill="#c59539"/>
+  <rect x="582" y="366" width="252" height="94" rx="18" fill="#f7f3ea"/>
+</svg>

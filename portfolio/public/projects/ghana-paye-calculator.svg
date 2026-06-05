@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#f7f3ea"/>
+  <rect x="78" y="70" width="804" height="460" rx="28" fill="#0c1f34"/>
+  <text x="126" y="146" fill="#f7f3ea" font-family="Arial, sans-serif" font-size="38" font-weight="700">Ghana PAYE Calculator</text>
+  <text x="126" y="188" fill="#c59539" font-family="Arial, sans-serif" font-size="22" font-weight="700">2026 GRA bands / SSNIT / Tier 3 relief</text>
+  <rect x="126" y="238" width="292" height="214" rx="20" fill="#f7f3ea"/>
+  <rect x="462" y="238" width="290" height="46" rx="12" fill="#f7f3ea" opacity=".9"/>
+  <rect x="462" y="306" width="226" height="46" rx="12" fill="#f7f3ea" opacity=".75"/>
+  <rect x="462" y="374" width="334" height="46" rx="12" fill="#c59539"/>
+  <text x="154" y="305" fill="#0c1f34" font-family="Arial, sans-serif" font-size="24" font-weight="700">Net pay</text>
+  <text x="154" y="366" fill="#0c1f34" font-family="Arial, sans-serif" font-size="50" font-weight="700">GHS 4,820</text>
+</svg>
