@@ -16,6 +16,7 @@ Most people call me **Kofi**.
 Accra, Ghana
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-prince--kofi--amissah.vercel.app-0c1f34?style=for-the-badge&logo=vercel&logoColor=white)](https://prince-kofi-amissah.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Prince%20Kofi%20Frimpong%20Amissah-119be8?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prince-kofi-frimpong-amissah/)
 [![Email](https://img.shields.io/badge/Email-princeamissah0%40gmail.com-11bfe3?style=for-the-badge&logo=gmail&logoColor=001f4d)](mailto:princeamissah0@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-MrrAmissah-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MrrAmissah)
 
@@ -137,5 +138,6 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 I am open to junior full-stack, IT support, networking, and product-building opportunities where practical systems matter.
 
 - Portfolio: [prince-kofi-amissah.vercel.app](https://prince-kofi-amissah.vercel.app)
+- LinkedIn: [linkedin.com/in/prince-kofi-frimpong-amissah](https://www.linkedin.com/in/prince-kofi-frimpong-amissah/)
 - Email: [princeamissah0@gmail.com](mailto:princeamissah0@gmail.com)
 - GitHub: [github.com/MrrAmissah](https://github.com/MrrAmissah)
