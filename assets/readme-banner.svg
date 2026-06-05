@@ -1,39 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
-  <title id="title">Prince Kofi Frimpong Amissah profile banner</title>
-  <desc id="desc">A slim navy, blue, and cyan personal banner for a developer profile.</desc>
-  <rect width="1200" height="280" rx="28" fill="#eaf4ff"/>
-  <circle cx="74" cy="140" r="154" fill="#d8e9fb"/>
-  <g opacity=".28" fill="#001f4d">
-    <circle cx="18" cy="54" r="4"/>
-    <circle cx="48" cy="54" r="4"/>
-    <circle cx="78" cy="54" r="4"/>
-    <circle cx="18" cy="84" r="4"/>
-    <circle cx="48" cy="84" r="4"/>
-    <circle cx="78" cy="84" r="4"/>
-    <circle cx="18" cy="114" r="4"/>
-    <circle cx="48" cy="114" r="4"/>
-    <circle cx="78" cy="114" r="4"/>
-    <circle cx="18" cy="144" r="4"/>
-    <circle cx="48" cy="144" r="4"/>
-    <circle cx="78" cy="144" r="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Profile banner</title>
+  <desc id="desc">A clean navy, blue, cyan, and orange banner for an information systems and full-stack developer profile.</desc>
+  <rect width="1200" height="190" rx="24" fill="#eaf4ff"/>
+  <path d="M0 0h1200v190H0z" fill="#eaf4ff"/>
+  <path d="M0 0h338c-52 30-78 72-78 126 0 24 7 46 20 64H0V0Z" fill="#d8e9fb"/>
+  <g opacity=".24" fill="#001f4d">
+    <circle cx="42" cy="45" r="4"/>
+    <circle cx="72" cy="45" r="4"/>
+    <circle cx="102" cy="45" r="4"/>
+    <circle cx="42" cy="75" r="4"/>
+    <circle cx="72" cy="75" r="4"/>
+    <circle cx="102" cy="75" r="4"/>
+    <circle cx="42" cy="105" r="4"/>
+    <circle cx="72" cy="105" r="4"/>
+    <circle cx="102" cy="105" r="4"/>
+    <circle cx="42" cy="135" r="4"/>
+    <circle cx="72" cy="135" r="4"/>
+    <circle cx="102" cy="135" r="4"/>
   </g>
-  <rect x="776" y="36" width="344" height="208" rx="28" fill="#001f4d"/>
-  <path d="M956 66h102a68 68 0 0 1 68 68v102H956V66Z" fill="#119be8"/>
-  <path d="M872 132h112v112H812v-52a60 60 0 0 1 60-60Z" fill="#11bfe3"/>
-  <path d="M1012 101h56" stroke="#eaf4ff" stroke-width="8" stroke-linecap="round" opacity=".75"/>
-  <path d="M1022 128h72" stroke="#eaf4ff" stroke-width="8" stroke-linecap="round" opacity=".55"/>
-  <path d="M840 204h92" stroke="#001f4d" stroke-width="8" stroke-linecap="round" opacity=".24"/>
-  <path d="M864 228h62" stroke="#001f4d" stroke-width="8" stroke-linecap="round" opacity=".18"/>
-  <text x="112" y="106" fill="#001f4d" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">
-    Prince Kofi Frimpong Amissah
-  </text>
-  <text x="114" y="150" fill="#073b7a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">
+  <g transform="translate(884 34)">
+    <rect x="0" y="0" width="210" height="122" rx="22" fill="#001f4d"/>
+    <rect x="132" y="28" width="118" height="92" rx="10" fill="#119be8"/>
+    <rect x="52" y="64" width="154" height="56" rx="8" fill="#11bfe3"/>
+    <path d="M154 56h52" stroke="#eaf4ff" stroke-width="7" stroke-linecap="round" opacity=".74"/>
+    <path d="M168 80h60" stroke="#eaf4ff" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <text x="150" y="78" fill="#001f4d" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">
     Information Systems / Networking / Full-Stack Developer
   </text>
-  <text x="114" y="190" fill="#24577f" font-family="Inter, Arial, sans-serif" font-size="20">
-    Building practical tools for infrastructure, finance, and Ghanaian workflows.
+  <text x="150" y="118" fill="#24577f" font-family="Inter, Arial, sans-serif" font-size="21">
+    Practical tools for infrastructure, finance, and Ghanaian workflows.
   </text>
-  <rect x="114" y="216" width="92" height="8" rx="4" fill="#11bfe3"/>
-  <rect x="216" y="216" width="70" height="8" rx="4" fill="#119be8"/>
-  <rect x="296" y="216" width="42" height="8" rx="4" fill="#f47b20"/>
+  <rect x="150" y="143" width="98" height="8" rx="4" fill="#11bfe3"/>
+  <rect x="260" y="143" width="74" height="8" rx="4" fill="#119be8"/>
+  <rect x="346" y="143" width="46" height="8" rx="4" fill="#f47b20"/>
 </svg>

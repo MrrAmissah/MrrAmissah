@@ -49,7 +49,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 <table>
   <tr>
     <td width="50%">
-      <img src="./portfolio/public/og-image.svg" alt="Portfolio preview" width="100%" />
+      <img src="./assets/projects/portfolio.png" alt="Portfolio preview" width="100%" />
       <h3>Portfolio</h3>
       <p>Personal site tying together my work, skills, and contact links.</p>
       <p>
@@ -59,7 +59,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>Next.js</code> <code>TypeScript</code> <code>Tailwind</code> <code>Framer Motion</code></p>
     </td>
     <td width="50%">
-      <img src="./portfolio/public/projects/snip.svg" alt="Snip project preview" width="100%" />
+      <img src="./assets/projects/snip.png" alt="Snip project preview" width="100%" />
       <h3>Snip</h3>
       <p>Full-stack URL shortener with persistent links and click analytics.</p>
       <p>
@@ -71,7 +71,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
   </tr>
   <tr>
     <td width="50%">
-      <img src="./portfolio/public/projects/ghs-fx-converter.svg" alt="GHS FX Converter project preview" width="100%" />
+      <img src="./assets/projects/ghs-fx-converter.png" alt="GHS FX Converter project preview" width="100%" />
       <h3>GHS FX Converter</h3>
       <p>Live Ghana cedi exchange rates with offline cache for quick daily checks.</p>
       <p>
@@ -81,7 +81,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Live API</code></p>
     </td>
     <td width="50%">
-      <img src="./portfolio/public/projects/ghana-paye-calculator.svg" alt="Ghana PAYE Calculator project preview" width="100%" />
+      <img src="./assets/projects/ghana-paye-calculator.png" alt="Ghana PAYE Calculator project preview" width="100%" />
       <h3>Ghana PAYE Calculator</h3>
       <p>Payroll calculator for 2026 GRA bands, SSNIT Tier 1, Tier 3 relief, and printable payslips.</p>
       <p>
@@ -92,7 +92,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
   </tr>
   <tr>
     <td width="50%">
-      <img src="./portfolio/public/projects/subnet-calculator.svg" alt="Subnet Calculator project preview" width="100%" />
+      <img src="./assets/projects/subnet-calculator.png" alt="Subnet Calculator project preview" width="100%" />
       <h3>Subnet Calculator</h3>
       <p>IPv4 subnet/CIDR utility with binary breakdowns and subnet splitting.</p>
       <p>
