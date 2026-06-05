@@ -28,10 +28,11 @@ export const metadata: Metadata = {
     siteName: "Prince Kofi Amissah",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Prince Kofi Amissah portfolio preview",
+        type: "image/png",
+        alt: "Prince Kofi Frimpong Amissah portfolio preview",
       },
     ],
     locale: "en_GH",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     title: "Prince Kofi Amissah | Portfolio",
     description:
       "Information Systems, networking, IT infrastructure, and full-stack projects.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.png",

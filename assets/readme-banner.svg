@@ -1,37 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
-  <title id="title">Profile banner</title>
-  <desc id="desc">A clean navy, blue, cyan, and orange banner for an information systems and full-stack developer profile.</desc>
-  <rect width="1200" height="190" rx="24" fill="#eaf4ff"/>
-  <path d="M0 0h1200v190H0z" fill="#eaf4ff"/>
-  <path d="M0 0h338c-52 30-78 72-78 126 0 24 7 46 20 64H0V0Z" fill="#d8e9fb"/>
-  <g opacity=".24" fill="#001f4d">
-    <circle cx="42" cy="45" r="4"/>
-    <circle cx="72" cy="45" r="4"/>
-    <circle cx="102" cy="45" r="4"/>
-    <circle cx="42" cy="75" r="4"/>
-    <circle cx="72" cy="75" r="4"/>
-    <circle cx="102" cy="75" r="4"/>
-    <circle cx="42" cy="105" r="4"/>
-    <circle cx="72" cy="105" r="4"/>
-    <circle cx="102" cy="105" r="4"/>
-    <circle cx="42" cy="135" r="4"/>
-    <circle cx="72" cy="135" r="4"/>
-    <circle cx="102" cy="135" r="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Prince Kofi Frimpong Amissah</title>
+  <desc id="desc">Banner for an Information Systems, Networking, and Full-Stack Developer based in Accra, Ghana.</desc>
+
+  <!-- background -->
+  <rect width="1200" height="200" rx="24" fill="#EFF7FF"/>
+  <!-- soft left panel -->
+  <path d="M0 0h300c-62 38-90 86-90 134 0 24 8 47 23 66H0Z" fill="#DCEBFB"/>
+
+  <!-- dotted grid -->
+  <g fill="#071B3A" opacity=".16">
+    <circle cx="44" cy="48" r="4"/><circle cx="76" cy="48" r="4"/><circle cx="108" cy="48" r="4"/>
+    <circle cx="44" cy="80" r="4"/><circle cx="76" cy="80" r="4"/><circle cx="108" cy="80" r="4"/>
+    <circle cx="44" cy="112" r="4"/><circle cx="76" cy="112" r="4"/><circle cx="108" cy="112" r="4"/>
+    <circle cx="44" cy="144" r="4"/><circle cx="76" cy="144" r="4"/><circle cx="108" cy="144" r="4"/>
   </g>
-  <g transform="translate(884 34)">
-    <rect x="0" y="0" width="210" height="122" rx="22" fill="#001f4d"/>
-    <rect x="132" y="28" width="118" height="92" rx="10" fill="#119be8"/>
-    <rect x="52" y="64" width="154" height="56" rx="8" fill="#11bfe3"/>
-    <path d="M154 56h52" stroke="#eaf4ff" stroke-width="7" stroke-linecap="round" opacity=".74"/>
-    <path d="M168 80h60" stroke="#eaf4ff" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+
+  <!-- name -->
+  <text x="152" y="88" fill="#071B3A" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800">Prince <tspan fill="#006CFF">Kofi Frimpong</tspan> Amissah</text>
+  <!-- role -->
+  <text x="154" y="124" fill="#4B5F7A" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="500">Information Systems · Networking &amp; IT Infrastructure · Full-Stack Developer</text>
+  <!-- location -->
+  <text x="154" y="152" fill="#4B5F7A" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="500" opacity=".85">Accra, Ghana</text>
+  <!-- accent bars -->
+  <rect x="154" y="166" width="92" height="7" rx="3.5" fill="#006CFF"/>
+  <rect x="256" y="166" width="60" height="7" rx="3.5" fill="#0EA5E9"/>
+
+  <!-- right graphic: abstract product window -->
+  <g transform="translate(958 42)">
+    <rect x="0" y="0" width="200" height="116" rx="20" fill="#071B3A"/>
+    <rect x="124" y="26" width="112" height="86" rx="10" fill="#006CFF"/>
+    <rect x="48" y="60" width="146" height="52" rx="8" fill="#0EA5E9"/>
+    <circle cx="30" cy="26" r="5" fill="#0EA5E9"/>
+    <circle cx="50" cy="26" r="5" fill="#006CFF" opacity=".8"/>
+    <path d="M150 54h50" stroke="#EFF7FF" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+    <path d="M164 78h54" stroke="#EFF7FF" stroke-width="6" stroke-linecap="round" opacity=".5"/>
   </g>
-  <text x="150" y="78" fill="#001f4d" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">
-    Information Systems / Networking / Full-Stack Developer
-  </text>
-  <text x="150" y="118" fill="#24577f" font-family="Inter, Arial, sans-serif" font-size="21">
-    Practical tools for infrastructure, finance, and Ghanaian workflows.
-  </text>
-  <rect x="150" y="143" width="98" height="8" rx="4" fill="#11bfe3"/>
-  <rect x="260" y="143" width="74" height="8" rx="4" fill="#119be8"/>
-  <rect x="346" y="143" width="46" height="8" rx="4" fill="#f47b20"/>
 </svg>
