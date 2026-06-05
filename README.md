@@ -49,7 +49,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 <table>
   <tr>
     <td width="50%">
-      <img src="./assets/projects/portfolio.png" alt="Portfolio preview" width="100%" />
+      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
       <h3>Portfolio</h3>
       <p>Personal site tying together my work, skills, and contact links.</p>
       <p>
@@ -123,10 +123,10 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=MrrAmissah&show_icons=true&theme=github_dark&hide_border=true&bg_color=001f4d&title_color=11bfe3&text_color=eaf4ff&icon_color=119be8" alt="Prince Kofi Frimpong Amissah GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MrrAmissah&layout=compact&theme=github_dark&hide_border=true&bg_color=001f4d&title_color=11bfe3&text_color=eaf4ff" alt="Most used languages" />
+<img width="92%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MrrAmissah&theme=github_dark" alt="Prince Kofi Frimpong Amissah GitHub profile details" />
 
-<img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=MrrAmissah&bg_color=001f4d&color=eaf4ff&line=119be8&point=11bfe3&area=true&area_color=119be8&hide_border=true" alt="Contribution activity graph" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MrrAmissah&theme=github_dark" alt="Prince Kofi Frimpong Amissah GitHub stats" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MrrAmissah&theme=github_dark" alt="Most committed languages" />
 
 </div>
 
