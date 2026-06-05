@@ -3,26 +3,51 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f7f3ea;
-  --foreground: #0c1f34;
-  --paper: #f7f3ea;
-  --ink: #0c1f34;
-  --accent: #c59539;
+  --background: #f6f9fd;
+  --foreground: #071b35;
+  --paper: #f6f9fd;
+  --surface: #ffffff;
+  --surface-muted: #e8f2ff;
+  --ink: #071b35;
+  --navy: #012552;
+  --accent: #119be8;
+  --cyan: #11c7d6;
+  --gold: #f4a11c;
+  --coral: #ff6b5f;
+  --line: #c9d9ea;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-paper: #f7f3ea;
-  --color-ink: #0c1f34;
-  --color-accent: #c59539;
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-ink: var(--ink);
+  --color-navy: var(--navy);
+  --color-accent: var(--accent);
+  --color-cyan: var(--cyan);
+  --color-gold: var(--gold);
+  --color-coral: var(--coral);
+  --color-line: var(--line);
   --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
 }
 
 .dark {
-  --background: #0c1f34;
-  --foreground: #f7f3ea;
+  --background: #06172c;
+  --foreground: #eff6ff;
+  --surface: #0b2442;
+  --surface-muted: #0f3158;
+  --navy: #00152f;
+  --accent: #27aaf0;
+  --cyan: #24d3df;
+  --gold: #ffb43d;
+  --coral: #ff7c70;
+  --line: rgba(239, 246, 255, 0.14);
+  /* NOTE: --ink and --paper are intentionally NOT flipped here. Components use
+     the pair `text-ink dark:text-paper` (dark text in light, light text in
+     dark), which only works when paper stays light and ink stays dark. */
 }
 
 html {
@@ -30,14 +55,17 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    linear-gradient(180deg, rgba(17, 199, 214, 0.08), transparent 22rem),
+    linear-gradient(90deg, rgba(244, 161, 28, 0.05), transparent 34rem),
+    var(--background);
   color: var(--foreground);
   font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
 }
 
 ::selection {
-  background: var(--accent);
-  color: var(--ink);
+  background: var(--cyan);
+  color: var(--navy);
 }
 
 @media (prefers-reduced-motion: reduce) {

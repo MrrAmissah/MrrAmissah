@@ -14,7 +14,7 @@ export function Section({ id, eyebrow, title, children }: SectionProps) {
   return (
     <motion.section
       id={id}
-      className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-20"
+      className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20"
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}

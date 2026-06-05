@@ -15,7 +15,7 @@ export const projects: Project[] = [
       "IPv4 subnet and CIDR utility with binary breakdowns and subnet splitting.",
     stack: ["React", "TypeScript", "Vite", "Tailwind", "Vitest"],
     repoUrl: "https://github.com/MrrAmissah/Subnet-Calculator",
-    image: "/projects/subnet-calculator.svg",
+    image: "/projects/subnet-calculator.png",
     accent: "Networking",
   },
   {
@@ -24,7 +24,7 @@ export const projects: Project[] = [
       "Ghana payroll calculator for 2026 GRA bands, SSNIT Tier 1, Tier 3 relief, and printable payslips.",
     stack: ["React", "TypeScript", "Vite", "Tailwind"],
     repoUrl: "https://github.com/MrrAmissah/Ghana-Paye-Calculator",
-    image: "/projects/ghana-paye-calculator.svg",
+    image: "/projects/ghana-paye-calculator.png",
     accent: "Ghana finance",
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Vite", "Tailwind"],
     liveUrl: "https://ghs-fx-converter.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/GHS-FX-Converter",
-    image: "/projects/ghs-fx-converter.svg",
+    image: "/projects/ghs-fx-converter.png",
     accent: "Live API",
   },
   {
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Prisma", "Neon", "Tailwind"],
     liveUrl: "https://snipnow.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/Link-Shortener",
-    image: "/projects/snip.svg",
+    image: "/projects/snip.png",
     accent: "Full stack",
   },
 ];

@@ -1,22 +1,21 @@
+import { Code2, Database, Network } from "lucide-react";
 import { Section } from "./Section";
 
 const groups = [
   {
-    title: "Technical",
-    skills: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Node.js",
-      "PostgreSQL/Prisma",
-      "Tailwind",
-      "Networking (CCNA)",
-      "Git",
-    ],
+    title: "Frontend",
+    Icon: Code2,
+    skills: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
-    title: "Professional",
-    skills: ["Planning", "Collaboration", "Communication", "Adaptability"],
+    title: "Backend & data",
+    Icon: Database,
+    skills: ["Node.js", "PostgreSQL", "Prisma", "Paystack / Clerk"],
+  },
+  {
+    title: "Infrastructure & networking",
+    Icon: Network,
+    skills: ["Networking (CCNA)", "Git", "Vercel", "Vitest"],
   },
 ];
 
@@ -27,20 +26,25 @@ export function Skills() {
       eyebrow="Skills"
       title="A balanced toolkit for software, infrastructure, and delivery."
     >
-      <div className="grid gap-5 sm:grid-cols-2">
-        {groups.map((group) => (
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {groups.map(({ title, Icon, skills }) => (
           <div
-            key={group.title}
-            className="rounded-lg border border-ink/10 bg-white p-6 dark:border-paper/10 dark:bg-paper/5"
+            key={title}
+            className="rounded-2xl border border-line bg-surface p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/40 hover:shadow-lg dark:bg-surface"
           >
-            <h3 className="text-lg font-semibold text-ink dark:text-paper">
-              {group.title}
-            </h3>
+            <div className="flex items-center gap-3">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-accent/10 text-accent">
+                <Icon className="h-5 w-5" />
+              </span>
+              <h3 className="text-base font-semibold text-ink dark:text-paper">
+                {title}
+              </h3>
+            </div>
             <div className="mt-5 flex flex-wrap gap-2">
-              {group.skills.map((skill) => (
+              {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full bg-ink px-3 py-1.5 text-sm font-medium text-paper dark:bg-paper dark:text-ink"
+                  className="rounded-lg border border-line bg-surface-muted/60 px-3 py-1.5 text-sm font-medium text-ink/80 dark:bg-background/40 dark:text-paper/80"
                 >
                   {skill}
                 </span>

@@ -1,72 +1,104 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, ArrowRight, MapPin } from "lucide-react";
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden border-b border-ink/10 bg-paper dark:border-paper/10 dark:bg-ink"
+      className="relative isolate overflow-hidden border-b border-line bg-paper dark:bg-background"
     >
-      <div className="absolute inset-0 -z-10 opacity-70 dark:opacity-40">
-        <div className="absolute left-1/2 top-0 h-full w-[1100px] -translate-x-1/2 bg-[radial-gradient(circle_at_20%_20%,rgba(197,149,57,0.24),transparent_24%),linear-gradient(115deg,rgba(12,31,52,0.08),transparent_45%),repeating-linear-gradient(135deg,rgba(12,31,52,0.08)_0_1px,transparent_1px_18px)]" />
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-[linear-gradient(120deg,var(--paper)_0%,var(--paper)_54%,rgba(17,155,232,0.10)_54%,rgba(17,199,214,0.14)_100%)] dark:bg-[linear-gradient(120deg,var(--background)_0%,var(--background)_54%,rgba(17,155,232,0.14)_54%,rgba(17,199,214,0.10)_100%)]" />
       </div>
 
-      <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-10 sm:px-8 sm:py-16 lg:min-h-[calc(78vh-4rem)] lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 sm:min-h-[72svh] sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,0.74fr)]">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
+          className="max-w-2xl"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+          <p className="flex items-center gap-2 text-sm font-medium text-ink/60 dark:text-paper/60">
+            <MapPin className="h-4 w-4 text-accent" />
             Accra, Ghana
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[0.98] text-balance text-ink sm:text-6xl lg:text-7xl dark:text-paper">
-            Prince Kofi Amissah
+
+          <h1 className="mt-6 text-5xl font-semibold leading-[1.02] text-balance text-ink sm:text-6xl lg:text-7xl dark:text-paper">
+            Prince <span className="text-accent">Kofi Frimpong</span> Amissah
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl dark:text-paper/72">
-            Information Systems / Networking & IT Infrastructure / Full-Stack
-            Developer
+
+          <p className="mt-5 max-w-xl text-lg leading-8 text-ink/72 sm:text-xl sm:leading-9 dark:text-paper/72">
+            Information Systems graduate, CCNA-trained network technician, and
+            full-stack developer building practical tools for infrastructure,
+            finance, and Ghanaian workflows.
           </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+
+          <div className="mt-6 grid max-w-xl gap-3 text-sm font-medium text-ink/72 sm:grid-cols-3 dark:text-paper/72">
+            {["Networking", "Full-stack apps", "Ghanaian utilities"].map((item) => (
+              <div
+                key={item}
+                className="border border-line bg-white/65 px-3 py-2 backdrop-blur dark:bg-surface/55"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="#work"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-ink px-6 text-sm font-semibold text-paper transition hover:bg-accent hover:text-ink focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-paper dark:bg-paper dark:text-ink dark:hover:bg-accent dark:focus:ring-offset-ink"
+              className="group inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-accent px-6 text-sm font-semibold text-white shadow-sm shadow-accent/30 transition hover:-translate-y-0.5 hover:bg-cyan hover:shadow-lg hover:shadow-accent/40 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-paper dark:hover:bg-cyan dark:focus:ring-offset-background"
             >
               View work
+              <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </a>
             <a
               href="#contact"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-ink/20 px-6 text-sm font-semibold text-ink transition hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-paper dark:border-paper/20 dark:text-paper dark:focus:ring-offset-ink"
+              className="inline-flex h-11 items-center justify-center rounded-lg border border-line bg-white/70 px-6 text-sm font-semibold text-ink backdrop-blur transition hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-paper dark:bg-surface/70 dark:text-paper dark:focus:ring-offset-background"
             >
               Get in touch
             </a>
           </div>
+
+          <div className="mt-6 flex items-center gap-3 text-ink/60 dark:text-paper/60">
+            {[
+              { href: "https://github.com/MrrAmissah", label: "GitHub", Icon: Github },
+              { href: "https://www.linkedin.com/in/prince-kofi-frimpong-amissah/", label: "LinkedIn", Icon: Linkedin },
+              { href: "mailto:princeamissah0@gmail.com", label: "Email", Icon: Mail },
+            ].map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noreferrer" : undefined}
+                aria-label={label}
+                className="grid h-10 w-10 place-items-center rounded-lg border border-line bg-white/70 backdrop-blur transition hover:-translate-y-0.5 hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent dark:bg-surface/70"
+              >
+                <Icon className="h-[18px] w-[18px]" />
+              </a>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
-          className="relative mx-auto aspect-[16/10] w-full max-w-[22rem] lg:aspect-[4/5] lg:max-w-xs"
+          className="relative mx-auto w-full max-w-[19rem] sm:max-w-[21rem] lg:max-w-sm"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          aria-hidden="true"
         >
-          <div className="absolute inset-0 rounded-[2rem] border border-ink/10 bg-[linear-gradient(160deg,#0c1f34,#14395c_45%,#c59539)] shadow-2xl dark:border-paper/10" />
-          <div className="absolute inset-5 rounded-[1.5rem] border border-paper/25 bg-paper/8 p-6 text-paper backdrop-blur">
-            <div className="flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-[#ff6b6b]" />
-              <span className="h-3 w-3 rounded-full bg-[#ffd166]" />
-              <span className="h-3 w-3 rounded-full bg-[#2dd4bf]" />
-            </div>
-            <div className="mt-6 space-y-3 lg:mt-10 lg:space-y-4">
-              <div className="h-4 w-28 rounded-full bg-paper/80" />
-              <div className="h-12 rounded-2xl border border-paper/20 bg-paper/12 lg:h-16" />
-              <div className="grid grid-cols-2 gap-3">
-                <div className="h-16 rounded-2xl border border-paper/20 bg-paper/12 lg:h-24" />
-                <div className="h-16 rounded-2xl border border-paper/20 bg-paper/12 lg:h-24" />
-              </div>
-              <div className="hidden h-28 rounded-2xl border border-paper/20 bg-paper/12 lg:block" />
-            </div>
+          <div className="absolute -inset-5 -z-10 rounded-[2.5rem] bg-[radial-gradient(circle_at_30%_20%,rgba(17,155,232,0.30),transparent_70%)] blur-2xl" />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-surface shadow-2xl ring-1 ring-accent/20">
+            <Image
+              src="/prince.jpg"
+              alt="Prince Kofi Frimpong Amissah"
+              fill
+              priority
+              sizes="(min-width: 1024px) 24rem, (min-width: 640px) 21rem, 19rem"
+              className="object-cover object-center"
+            />
           </div>
         </motion.div>
       </div>
