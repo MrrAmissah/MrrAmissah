@@ -13,8 +13,8 @@ const contacts = [
   },
   {
     label: "LinkedIn",
-    href: "#",
-    value: "LinkedIn URL pending",
+    href: "https://www.linkedin.com/in/prince-kofi-frimpong-amissah/",
+    value: "linkedin.com/in/prince-kofi-frimpong-amissah",
   },
 ];
 
