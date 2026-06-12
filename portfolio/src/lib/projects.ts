@@ -10,6 +10,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Team Urbanflow",
+    description:
+      "AI-powered drone gutter inspection dashboard with browser-side classification, batch workflows, human review, Supabase persistence, and CSV export.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "TensorFlow.js",
+      "Teachable Machine",
+      "Supabase",
+    ],
+    liveUrl: "https://urbanflow-mvp.vercel.app",
+    repoUrl: "https://github.com/MrrAmissah/urbanflow-mvp",
+    image: "/projects/urbanflow.png",
+    accent: "Civic tech AI",
+  },
+  {
     title: "Subnet Calculator",
     description:
       "IPv4 subnet and CIDR utility with binary breakdowns and subnet splitting.",

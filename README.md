@@ -103,6 +103,18 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Networking</code></p>
     </td>
     <td width="50%">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/urbanflow-mvp/main/public/social-preview.png" alt="Team Urbanflow project preview" width="100%" />
+      <h3>Team Urbanflow</h3>
+      <p>AI-powered civic-tech inspection dashboard for classifying drone gutter images, processing batches, and routing uncertain results into human review.</p>
+      <p>
+        <a href="https://urbanflow-mvp.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/urbanflow-mvp">Code</a>
+      </p>
+      <p><code>Next.js</code> <code>TypeScript</code> <code>TensorFlow.js</code> <code>Supabase</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" colspan="2">
       <h3>What I am building toward</h3>
       <p>A portfolio of tools that connects software engineering with Ghanaian business, payments, and infrastructure realities.</p>
       <p>
