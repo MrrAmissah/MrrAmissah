@@ -115,6 +115,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
   </tr>
   <tr>
     <td width="50%">
+      <img src="./assets/projects/livelayer-control.png" alt="LiveLayer control dashboard preview" width="100%" />
       <h3>LiveLayer</h3>
       <p>Local-first OBS graphics control surface for live worship and productions, with browser-based control/output, presets, local assets, people, dynamic fields, and scripture lookup.</p>
       <p>
