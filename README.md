@@ -114,7 +114,15 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
     </td>
   </tr>
   <tr>
-    <td width="50%" colspan="2">
+    <td width="50%">
+      <h3>LiveLayer</h3>
+      <p>Local-first OBS graphics control surface for live worship and productions, with browser-based control/output, presets, local assets, people, dynamic fields, and scripture lookup.</p>
+      <p>
+        <a href="https://github.com/MrrAmissah/Live-Layer">Code</a>
+      </p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>OBS</code></p>
+    </td>
+    <td width="50%">
       <h3>What I am building toward</h3>
       <p>A portfolio of tools that connects software engineering with Ghanaian business, payments, and infrastructure realities.</p>
       <p>
