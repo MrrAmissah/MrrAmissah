@@ -48,6 +48,17 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 
 <table>
   <tr>
+    <td colspan="2">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
+      <h3>FraudCase GH</h3>
+      <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file. It redacts PII before any AI analysis, scores risk, extracts evidence entities, builds a timeline, and exports a clean PDF report. Full-stack with token-verified, owner-isolated data access and a non-fabricating heuristic fallback when the model is offline.</p>
+      <p>
+        <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
+      </p>
+      <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%">
       <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
       <h3>Portfolio</h3>
