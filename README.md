@@ -61,36 +61,34 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
   </tr>
   <tr>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
-      <h3>Portfolio</h3>
-      <p>Personal site tying together my work, skills, and contact links.</p>
+      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
+      <h3>FraudCase GH</h3>
+      <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file with PII redaction, risk scoring, timelines, and PDF reports.</p>
       <p>
-        <a href="https://prince-kofi-amissah.vercel.app">Live</a> ·
-        <a href="./portfolio">Source</a>
+        <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
       </p>
-      <p><code>Next.js</code> <code>TypeScript</code> <code>Tailwind</code> <code>Framer Motion</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
     </td>
     <td width="50%">
-      <img src="./assets/projects/snip.png" alt="Snip project preview" width="100%" />
-      <h3>Snip</h3>
-      <p>Full-stack URL shortener with persistent links and click analytics.</p>
+      <img src="https://raw.githubusercontent.com/MrrAmissah/urbanflow-mvp/main/public/social-preview.png" alt="Team Urbanflow project preview" width="100%" />
+      <h3>Team Urbanflow</h3>
+      <p>AI-powered civic-tech inspection dashboard for classifying drone gutter images, processing batches, and routing uncertain results into human review.</p>
       <p>
-        <a href="https://snipnow.vercel.app">Live</a> ·
-        <a href="https://github.com/MrrAmissah/Link-Shortener">Code</a>
+        <a href="https://urbanflow-mvp.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/urbanflow-mvp">Code</a>
       </p>
-      <p><code>Next.js</code> <code>Prisma</code> <code>Neon</code> <code>Tailwind</code></p>
+      <p><code>Next.js</code> <code>TypeScript</code> <code>TensorFlow.js</code> <code>Supabase</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="./assets/projects/ghs-fx-converter.png" alt="GHS FX Converter project preview" width="100%" />
-      <h3>GHS FX Converter</h3>
-      <p>Live Ghana cedi exchange rates with offline cache for quick daily checks.</p>
+      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/livelayer-control.png?v=a1b7f5b" alt="LiveLayer control dashboard preview" width="100%" />
+      <h3>LiveLayer</h3>
+      <p>Local-first OBS graphics control surface for live worship and productions, with browser-based control/output, presets, local assets, people, dynamic fields, and scripture lookup.</p>
       <p>
-        <a href="https://ghs-fx-converter.vercel.app">Live</a> ·
-        <a href="https://github.com/MrrAmissah/GHS-FX-Converter">Code</a>
+        <a href="https://github.com/MrrAmissah/Live-Layer">Code</a>
       </p>
-      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Live API</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>OBS</code></p>
     </td>
     <td width="50%">
       <img src="./assets/projects/ghana-paye-calculator.png" alt="Ghana PAYE Calculator project preview" width="100%" />
@@ -115,34 +113,36 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Networking</code></p>
     </td>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/urbanflow-mvp/main/public/social-preview.png" alt="Team Urbanflow project preview" width="100%" />
-      <h3>Team Urbanflow</h3>
-      <p>AI-powered civic-tech inspection dashboard for classifying drone gutter images, processing batches, and routing uncertain results into human review.</p>
+      <img src="./assets/projects/ghs-fx-converter.png" alt="GHS FX Converter project preview" width="100%" />
+      <h3>GHS FX Converter</h3>
+      <p>Live Ghana cedi exchange rates with offline cache for quick daily checks.</p>
       <p>
-        <a href="https://urbanflow-mvp.vercel.app">Live</a> ·
-        <a href="https://github.com/MrrAmissah/urbanflow-mvp">Code</a>
+        <a href="https://ghs-fx-converter.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/GHS-FX-Converter">Code</a>
       </p>
-      <p><code>Next.js</code> <code>TypeScript</code> <code>TensorFlow.js</code> <code>Supabase</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Live API</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/livelayer-control.png?v=a1b7f5b" alt="LiveLayer control dashboard preview" width="100%" />
-      <h3>LiveLayer</h3>
-      <p>Local-first OBS graphics control surface for live worship and productions, with browser-based control/output, presets, local assets, people, dynamic fields, and scripture lookup.</p>
+      <img src="./assets/projects/snip.png" alt="Snip project preview" width="100%" />
+      <h3>Snip</h3>
+      <p>Full-stack URL shortener with persistent links and click analytics.</p>
       <p>
-        <a href="https://github.com/MrrAmissah/Live-Layer">Code</a>
+        <a href="https://snipnow.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/Link-Shortener">Code</a>
       </p>
-      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>OBS</code></p>
+      <p><code>Next.js</code> <code>Prisma</code> <code>Neon</code> <code>Tailwind</code></p>
     </td>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
-      <h3>FraudCase GH</h3>
-      <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file with PII redaction, risk scoring, timelines, and PDF reports.</p>
+      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
+      <h3>Portfolio</h3>
+      <p>Personal site tying together my work, skills, and contact links.</p>
       <p>
-        <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
+        <a href="https://prince-kofi-amissah.vercel.app">Live</a> ·
+        <a href="./portfolio">Source</a>
       </p>
-      <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
+      <p><code>Next.js</code> <code>TypeScript</code> <code>Tailwind</code> <code>Framer Motion</code></p>
     </td>
   </tr>
   <tr>
