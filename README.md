@@ -65,6 +65,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <h3>FraudCase GH</h3>
       <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file with PII redaction, risk scoring, timelines, and PDF reports.</p>
       <p>
+        <a href="https://fraudcase-gh.vercel.app/">Live</a> ·
         <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
       </p>
       <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
