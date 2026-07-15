@@ -21,7 +21,7 @@ Accra, Ghana
 
 I am **Prince Kofi Frimpong Amissah**, an Information Systems graduate and CCNA-trained network technician building practical software for infrastructure, finance, and everyday Ghanaian workflows.
 
-I like tools that make complicated things easier to trust: subnetting, payroll, exchange rates, escrow flows, and full-stack products that feel useful outside a tutorial.
+I like tools that make complicated things easier to trust: packet analysis, subnetting, payroll, exchange rates, escrow flows, and full-stack products that feel useful outside a tutorial.
 
 Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**, **Node.js**, **PostgreSQL/Prisma**, **Tailwind CSS**, and networking fundamentals.
 
@@ -38,8 +38,8 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       Auth, databases, analytics, deployment, and clean UI flows.
     </td>
     <td width="33%">
-      <strong>Networking & infrastructure</strong><br />
-      Subnetting, IT support, routing basics, and systems thinking.
+      <strong>Networking & security</strong><br />
+      Network forensics, subnetting, IT support, and systems thinking.
     </td>
   </tr>
 </table>
@@ -49,13 +49,14 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 <table>
   <tr>
     <td colspan="2">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
-      <h3>FraudCase GH</h3>
-      <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file. It redacts PII before any AI analysis, scores risk, extracts evidence entities, builds a timeline, and exports a clean PDF report. Full-stack with token-verified, owner-isolated data access and a non-fabricating heuristic fallback when the model is offline.</p>
+      <img src="https://raw.githubusercontent.com/MrrAmissah/PacketSage/main/docs/assets/packetsage-command-center.png" alt="PacketSage command center showing decoded packet evidence, protocol stats, signal counts, and investigation brief" width="100%" />
+      <h3>PacketSage</h3>
+      <p>A defensive network forensics sandbox for reviewing packet exports and decoded telemetry. It ingests Wireshark CSVs, Suricata EVE alerts, Zeek summaries, and structured logs, then reconstructs TCP/UDP flows, surfaces DNS/HTTP/TLS intelligence, flags suspicious signals with a deterministic rule engine, and drafts evidence-bound AI analyst memos through a redacting server-side proxy. Everything runs in an ephemeral in-memory sandbox and compiles into a report-ready incident timeline with a readiness score.</p>
       <p>
-        <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
+        <a href="https://packetsage.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/PacketSage">Code</a>
       </p>
-      <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Express</code> <code>Gemini</code> <code>Network Forensics</code></p>
     </td>
   </tr>
   <tr>
@@ -135,8 +136,19 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>OBS</code></p>
     </td>
     <td width="50%">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
+      <h3>FraudCase GH</h3>
+      <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file with PII redaction, risk scoring, timelines, and PDF reports.</p>
+      <p>
+        <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
+      </p>
+      <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
       <h3>What I am building toward</h3>
-      <p>A portfolio of tools that connects software engineering with Ghanaian business, payments, and infrastructure realities.</p>
+      <p>A portfolio of tools that connects software engineering with Ghanaian business, payments, security, and infrastructure realities.</p>
       <p>
         <a href="mailto:princeamissah0@gmail.com">Start a conversation</a>
       </p>
