@@ -127,6 +127,10 @@ export function Header() {
       <AnimatePresence>
         {open ? (
           <motion.div
+            // AnimatePresence tracks children by key; without one the enter
+            // animation never runs and the overlay sits invisible at opacity 0
+            // while still covering the page and swallowing clicks.
+            key="overlay-menu"
             id="overlay-menu"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
