@@ -138,10 +138,11 @@ export function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-xl text-lg leading-8 text-dim sm:mt-7 sm:text-xl sm:leading-9"
           >
-            I design and build{" "}
+            CCNA-trained, I design and build{" "}
             <span className="text-text">practical software</span> across
-            fintech, cybersecurity and network infrastructure, with a focus on
-            solving real operational problems.
+            fintech, cybersecurity and network infrastructure, focused on real
+            operational problems in{" "}
+            <span className="text-text">Ghanaian workflows</span>.
           </motion.p>
 
           <motion.div
