@@ -1,21 +1,20 @@
-import { Code2, Database, Network } from "lucide-react";
+"use client";
+
+import { motion } from "framer-motion";
 import { Section } from "./Section";
 
 const groups = [
   {
     title: "Frontend",
-    Icon: Code2,
-    skills: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    skills: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
     title: "Backend & data",
-    Icon: Database,
-    skills: ["Node.js", "PostgreSQL", "Prisma", "Chipper Cash / Clerk"],
+    skills: ["Node.js", "PostgreSQL", "Prisma", "Supabase", "Clerk"],
   },
   {
     title: "Infrastructure & networking",
-    Icon: Network,
-    skills: ["Networking (CCNA)", "Git", "Vercel", "Vitest"],
+    skills: ["Networking (CCNA)", "Routing & switching", "Git", "Vercel", "Vitest"],
   },
 ];
 
@@ -23,34 +22,39 @@ export function Skills() {
   return (
     <Section
       id="skills"
+      index="04"
       eyebrow="Skills"
-      title="A balanced toolkit for software, infrastructure, and delivery."
+      title="A toolkit that spans"
+      accentTitle="the wire and the browser."
     >
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {groups.map(({ title, Icon, skills }) => (
-          <div
-            key={title}
-            className="rounded-2xl border border-line bg-surface p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/40 hover:shadow-lg dark:bg-surface"
+      <div className="border-t border-line">
+        {groups.map((group, i) => (
+          <motion.div
+            key={group.title}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{
+              duration: 0.6,
+              delay: i * 0.08,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="grid gap-6 border-b border-line py-10 md:grid-cols-[18rem_1fr] md:gap-12"
           >
-            <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-accent/10 text-accent">
-                <Icon className="h-5 w-5" />
-              </span>
-              <h3 className="text-base font-semibold text-ink dark:text-paper">
-                {title}
-              </h3>
-            </div>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <span
+            <h3 className="font-display text-2xl font-bold text-text sm:text-3xl">
+              {group.title}
+            </h3>
+            <ul className="flex flex-wrap gap-2.5 self-center">
+              {group.skills.map((skill) => (
+                <li
                   key={skill}
-                  className="rounded-lg border border-line bg-surface-muted/60 px-3 py-1.5 text-sm font-medium text-ink/80 dark:bg-background/40 dark:text-paper/80"
+                  className="rounded-full border border-line-strong px-4 py-2 text-sm font-medium text-dim transition-colors duration-200 hover:border-accent hover:text-accent"
                 >
                   {skill}
-                </span>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </motion.div>
         ))}
       </div>
     </Section>

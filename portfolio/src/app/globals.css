@@ -1,74 +1,127 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
+/* Dark-only, single committed look: warm near-black brown canvas, bone text,
+   burnt orange accent. No theme toggle and no `.dark` class. */
 :root {
-  --background: #EFF7FF;
-  --foreground: #071B3A;
-  --paper: #EFF7FF;
-  --surface: #ffffff;
-  --surface-muted: #EFF7FF;
-  --ink: #071B3A;
-  --navy: #071B3A;
-  --accent: #006CFF;
-  --cyan: #0EA5E9;
-  --muted: #4B5F7A;
-  --gold: #f4a11c;
-  --coral: #ff6b5f;
-  --line: #CFE3F7;
+  color-scheme: dark;
+
+  --bg: #17130f;
+  --bg-deep: #0f0c09;
+  --surface: #221b15;
+  --elev: #2e251d;
+
+  --text: #f0eae0;
+  --dim: #a99c8d;
+
+  --accent: #e8703a;
+  --accent-soft: #f5a47d;
+
+  --line: rgba(240, 234, 224, 0.12);
+  --line-strong: rgba(240, 234, 224, 0.22);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-paper: var(--paper);
+  --color-bg: var(--bg);
+  --color-bg-deep: var(--bg-deep);
   --color-surface: var(--surface);
-  --color-surface-muted: var(--surface-muted);
-  --color-ink: var(--ink);
-  --color-navy: var(--navy);
+  --color-elev: var(--elev);
+  --color-text: var(--text);
+  --color-dim: var(--dim);
   --color-accent: var(--accent);
-  --color-cyan: var(--cyan);
-  --color-muted: var(--muted);
-  --color-gold: var(--gold);
-  --color-coral: var(--coral);
+  --color-accent-soft: var(--accent-soft);
   --color-line: var(--line);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-}
+  --color-line-strong: var(--line-strong);
 
-.dark {
-  --background: #071B3A;
-  --foreground: #eff6ff;
-  --surface: #0b2442;
-  --surface-muted: #102f56;
-  --navy: #071B3A;
-  --accent: #006CFF;
-  --cyan: #0EA5E9;
-  --muted: #9fb1c7;
-  --gold: #ffb43d;
-  --coral: #ff7c70;
-  --line: rgba(239, 246, 255, 0.14);
-  /* NOTE: --ink and --paper are intentionally NOT flipped here. Components use
-     the pair `text-ink dark:text-paper` (dark text in light, light text in
-     dark), which only works when paper stays light and ink stays dark. */
+  /* No `--font-display` theme key: `.font-display` is hand-written below so it
+     can carry tracking and leading alongside the family. Registering the key
+     here would have Tailwind generate a competing family-only utility of the
+     same name. (The font's own variable is `--font-grotesk`; naming it
+     `--font-display` would make this declaration reference itself.) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 body {
-  background:
-    linear-gradient(180deg, rgba(14, 165, 233, 0.08), transparent 22rem),
-    linear-gradient(90deg, rgba(0, 108, 255, 0.05), transparent 34rem),
-    var(--background);
-  color: var(--foreground);
-  font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 ::selection {
-  background: var(--cyan);
-  color: var(--navy);
+  background: var(--accent);
+  color: var(--bg-deep);
+}
+
+.font-display {
+  font-family: var(--font-grotesk), var(--font-geist-sans), ui-sans-serif,
+    system-ui, sans-serif;
+  letter-spacing: -0.035em;
+  line-height: 0.94;
+}
+
+.text-display {
+  font-size: clamp(2.75rem, 8.6vw, 7rem);
+}
+
+.text-display-sm {
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+}
+
+.text-statement {
+  font-size: clamp(1.75rem, 4.2vw, 3.5rem);
+}
+
+.numeral-ghost {
+  font-size: clamp(6rem, 18vw, 16rem);
+  line-height: 0.75;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--line-strong);
+}
+
+/* Palette-aware hero scrims. Held solid for the first fifth so the panel edge
+   has no visible seam, then eased off fast enough to keep the face legible. */
+.hero-scrim-x {
+  background: linear-gradient(
+    to right,
+    var(--bg) 0%,
+    var(--bg) 20%,
+    color-mix(in srgb, var(--bg) 72%, transparent) 45%,
+    color-mix(in srgb, var(--bg) 12%, transparent) 78%,
+    transparent 100%
+  );
+}
+
+.hero-scrim-y {
+  background:
+    linear-gradient(to top, var(--bg) 0%, transparent 28%),
+    linear-gradient(to bottom, var(--bg) 0%, transparent 18%);
+}
+
+.accent-wash {
+  background: radial-gradient(
+    50rem 30rem at 50% 0%,
+    color-mix(in srgb, var(--accent) 12%, transparent),
+    transparent 65%
+  );
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 32s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -79,5 +132,9 @@ body {
     transition-duration: 0.001ms !important;
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  .animate-marquee {
+    animation: none;
   }
 }
