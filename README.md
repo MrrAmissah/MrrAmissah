@@ -136,7 +136,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>Next.js</code> <code>Prisma</code> <code>Neon</code> <code>Tailwind</code></p>
     </td>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
+      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=2026-07-27" alt="Portfolio preview" width="100%" />
       <h3>Portfolio</h3>
       <p>Personal site tying together my work, skills, and contact links.</p>
       <p>
