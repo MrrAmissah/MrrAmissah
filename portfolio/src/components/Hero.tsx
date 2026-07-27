@@ -138,10 +138,10 @@ export function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-xl text-lg leading-8 text-dim sm:mt-7 sm:text-xl sm:leading-9"
           >
-            Information Systems graduate, CCNA-trained network technician, and
-            full-stack developer building{" "}
-            <span className="text-text">practical tools</span> for
-            infrastructure, finance, and Ghanaian workflows.
+            I design and build{" "}
+            <span className="text-text">practical software</span> across
+            fintech, cybersecurity and network infrastructure, with a focus on
+            solving real operational problems.
           </motion.p>
 
           <motion.div
