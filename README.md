@@ -21,7 +21,7 @@ Accra, Ghana
 
 I am **Prince Kofi Frimpong Amissah**, an Information Systems graduate and CCNA-trained network technician building practical software for infrastructure, finance, and everyday Ghanaian workflows.
 
-I like tools that make complicated things easier to trust: subnetting, payroll, exchange rates, escrow flows, and full-stack products that feel useful outside a tutorial.
+I like tools that make complicated things easier to trust: packet analysis, subnetting, payroll, exchange rates, escrow flows, and full-stack products that feel useful outside a tutorial.
 
 Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**, **Node.js**, **PostgreSQL/Prisma**, **Tailwind CSS**, and networking fundamentals.
 
@@ -38,8 +38,8 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       Auth, databases, analytics, deployment, and clean UI flows.
     </td>
     <td width="33%">
-      <strong>Networking & infrastructure</strong><br />
-      Subnetting, IT support, routing basics, and systems thinking.
+      <strong>Networking & security</strong><br />
+      Network forensics, subnetting, IT support, and systems thinking.
     </td>
   </tr>
 </table>
@@ -48,37 +48,48 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 
 <table>
   <tr>
-    <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
-      <h3>Portfolio</h3>
-      <p>Personal site tying together my work, skills, and contact links.</p>
+    <td colspan="2">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/PacketSage/main/docs/assets/packetsage-command-center.png" alt="PacketSage command center showing decoded packet evidence, protocol stats, signal counts, and investigation brief" width="100%" />
+      <h3>PacketSage</h3>
+      <p>A defensive network forensics sandbox for reviewing packet exports and decoded telemetry. It ingests Wireshark CSVs, Suricata EVE alerts, Zeek summaries, and structured logs, then reconstructs TCP/UDP flows, surfaces DNS/HTTP/TLS intelligence, flags suspicious signals with a deterministic rule engine, and drafts evidence-bound AI analyst memos through a redacting server-side proxy. Everything runs in an ephemeral in-memory sandbox and compiles into a report-ready incident timeline with a readiness score.</p>
       <p>
-        <a href="https://prince-kofi-amissah.vercel.app">Live</a> ·
-        <a href="./portfolio">Source</a>
+        <a href="https://packetsage.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/PacketSage">Code</a>
       </p>
-      <p><code>Next.js</code> <code>TypeScript</code> <code>Tailwind</code> <code>Framer Motion</code></p>
-    </td>
-    <td width="50%">
-      <img src="./assets/projects/snip.png" alt="Snip project preview" width="100%" />
-      <h3>Snip</h3>
-      <p>Full-stack URL shortener with persistent links and click analytics.</p>
-      <p>
-        <a href="https://snipnow.vercel.app">Live</a> ·
-        <a href="https://github.com/MrrAmissah/Link-Shortener">Code</a>
-      </p>
-      <p><code>Next.js</code> <code>Prisma</code> <code>Neon</code> <code>Tailwind</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Express</code> <code>Gemini</code> <code>Network Forensics</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="./assets/projects/ghs-fx-converter.png" alt="GHS FX Converter project preview" width="100%" />
-      <h3>GHS FX Converter</h3>
-      <p>Live Ghana cedi exchange rates with offline cache for quick daily checks.</p>
+      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
+      <h3>FraudCase GH</h3>
+      <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file with PII redaction, risk scoring, timelines, and PDF reports.</p>
       <p>
-        <a href="https://ghs-fx-converter.vercel.app">Live</a> ·
-        <a href="https://github.com/MrrAmissah/GHS-FX-Converter">Code</a>
+        <a href="https://fraudcase-gh.vercel.app/">Live</a> ·
+        <a href="https://github.com/MrrAmissah/fraudcase-gh">Code</a>
       </p>
-      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Live API</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Express</code> <code>Firebase</code> <code>Gemini</code></p>
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/urbanflow-mvp/main/public/social-preview.png" alt="Team Urbanflow project preview" width="100%" />
+      <h3>Team Urbanflow</h3>
+      <p>AI-powered civic-tech inspection dashboard for classifying drone gutter images, processing batches, and routing uncertain results into human review.</p>
+      <p>
+        <a href="https://urbanflow-mvp.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/urbanflow-mvp">Code</a>
+      </p>
+      <p><code>Next.js</code> <code>TypeScript</code> <code>TensorFlow.js</code> <code>Supabase</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/livelayer-control.png?v=a1b7f5b" alt="LiveLayer control dashboard preview" width="100%" />
+      <h3>LiveLayer</h3>
+      <p>Local-first OBS graphics control surface for live worship and productions, with browser-based control/output, presets, local assets, people, dynamic fields, and scripture lookup.</p>
+      <p>
+        <a href="https://github.com/MrrAmissah/Live-Layer">Code</a>
+      </p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>OBS</code></p>
     </td>
     <td width="50%">
       <img src="./assets/projects/ghana-paye-calculator.png" alt="Ghana PAYE Calculator project preview" width="100%" />
@@ -103,20 +114,42 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
       <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Networking</code></p>
     </td>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/urbanflow-mvp/main/public/social-preview.png" alt="Team Urbanflow project preview" width="100%" />
-      <h3>Team Urbanflow</h3>
-      <p>AI-powered civic-tech inspection dashboard for classifying drone gutter images, processing batches, and routing uncertain results into human review.</p>
+      <img src="./assets/projects/ghs-fx-converter.png" alt="GHS FX Converter project preview" width="100%" />
+      <h3>GHS FX Converter</h3>
+      <p>Live Ghana cedi exchange rates with offline cache for quick daily checks.</p>
       <p>
-        <a href="https://urbanflow-mvp.vercel.app">Live</a> ·
-        <a href="https://github.com/MrrAmissah/urbanflow-mvp">Code</a>
+        <a href="https://ghs-fx-converter.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/GHS-FX-Converter">Code</a>
       </p>
-      <p><code>Next.js</code> <code>TypeScript</code> <code>TensorFlow.js</code> <code>Supabase</code></p>
+      <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Live API</code></p>
     </td>
   </tr>
   <tr>
-    <td width="50%" colspan="2">
+    <td width="50%">
+      <img src="./assets/projects/snip.png" alt="Snip project preview" width="100%" />
+      <h3>Snip</h3>
+      <p>Full-stack URL shortener with persistent links and click analytics.</p>
+      <p>
+        <a href="https://snipnow.vercel.app">Live</a> ·
+        <a href="https://github.com/MrrAmissah/Link-Shortener">Code</a>
+      </p>
+      <p><code>Next.js</code> <code>Prisma</code> <code>Neon</code> <code>Tailwind</code></p>
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/MrrAmissah/MrrAmissah/main/assets/projects/portfolio.png?v=ad30207" alt="Portfolio preview" width="100%" />
+      <h3>Portfolio</h3>
+      <p>Personal site tying together my work, skills, and contact links.</p>
+      <p>
+        <a href="https://prince-kofi-amissah.vercel.app">Live</a> ·
+        <a href="./portfolio">Source</a>
+      </p>
+      <p><code>Next.js</code> <code>TypeScript</code> <code>Tailwind</code> <code>Framer Motion</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
       <h3>What I am building toward</h3>
-      <p>A portfolio of tools that connects software engineering with Ghanaian business, payments, and infrastructure realities.</p>
+      <p>A portfolio of tools that connects software engineering with Ghanaian business, payments, security, and infrastructure realities.</p>
       <p>
         <a href="mailto:princeamissah0@gmail.com">Start a conversation</a>
       </p>
