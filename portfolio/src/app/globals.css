@@ -111,6 +111,15 @@ body {
   );
 }
 
+/* Carousel tracks scroll by swipe, arrows and dots, so the native bar is noise. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes marquee-scroll {
   from {
     transform: translateX(0);

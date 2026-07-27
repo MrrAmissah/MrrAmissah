@@ -28,17 +28,23 @@ const script: Block[] = [
     ],
   },
   {
-    command: 'tshark -r capture.pcapng -Y "tcp.flags.syn==1"',
+    command: 'tshark -r cap.pcapng -Y "tcp.flags.syn==1"',
     output: [
-      "1  0.000000  10.20.0.15 -> 203.0.113.80  [SYN]",
-      "2  0.000318  203.0.113.80 -> 10.20.0.15  [SYN, ACK]",
+      "1  10.20.0.15 -> 203.0.113.80  [SYN]",
+      "2  203.0.113.80 -> 10.20.0.15  [SYN, ACK]",
     ],
   },
   {
-    command: "curl -s localhost:3000/api/escrow/status",
-    output: ['{ "state": "held", "release": "on_delivery" }'],
+    command: "curl -s localhost:3000/api/escrow",
+    output: ['{"state":"held","release":"on_delivery"}'],
   },
 ];
+
+/**
+ * Every line is kept short enough to fit one row at the narrowest supported
+ * width. Combined with the fixed body height below, the card never changes
+ * size between commands, so nothing under it shifts.
+ */
 
 const TYPE_MS = 42;
 const LINE_MS = 170;
@@ -97,7 +103,11 @@ export function Terminal() {
 
       <div
         aria-hidden
-        className="min-h-[8.25rem] px-4 py-4 font-mono text-[0.72rem] leading-6 sm:text-[0.78rem]"
+        // Fixed height, not min-height: the tallest block is one command line,
+        // three output lines and the trailing prompt, so the box is sized for
+        // that and clipped. min-height let a wrapped line grow the card and
+        // push the whole page down mid-cycle.
+        className="h-40 overflow-hidden px-4 py-4 font-mono text-[0.72rem] leading-6 sm:text-[0.78rem]"
       >
         <p className="break-all text-text">
           <span className="text-accent">$</span> {shownCommand}

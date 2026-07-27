@@ -4,7 +4,8 @@ export type Project = {
   stack: string[];
   liveUrl?: string;
   repoUrl?: string;
-  image: string;
+  /** One or more screenshots. More than one renders as a carousel. */
+  images: string[];
   accent: string;
 };
 
@@ -17,7 +18,12 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Vite", "Express", "Tailwind", "Gemini API"],
     liveUrl: "https://packetsage.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/PacketSage",
-    image: "/projects/packetsage.jpg",
+    images: [
+      "/projects/packetsage-command-center.jpg",
+      "/projects/packetsage-flow-explorer.jpg",
+      "/projects/packetsage-protocol-intelligence.jpg",
+      "/projects/packetsage-incident-timeline.jpg",
+    ],
     accent: "Network forensics",
   },
   {
@@ -27,7 +33,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Vite", "Firebase", "Express", "Gemini API"],
     liveUrl: "https://fraudcase-gh.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/fraudcase-gh",
-    image: "/projects/fraudcase.jpg",
+    images: ["/projects/fraudcase.jpg"],
     accent: "Fraud evidence",
   },
   {
@@ -43,7 +49,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://urbanflow-mvp.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/urbanflow-mvp",
-    image: "/projects/urbanflow.png",
+    images: ["/projects/urbanflow.png"],
     accent: "Civic tech AI",
   },
   {
@@ -53,7 +59,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Vite", "Tailwind", "Vitest"],
     liveUrl: "https://subnet-calculator-jade.vercel.app/",
     repoUrl: "https://github.com/MrrAmissah/Subnet-Calculator",
-    image: "/projects/subnet-calculator.png",
+    images: ["/projects/subnet-calculator.png"],
     accent: "Networking",
   },
   {
@@ -63,7 +69,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Vite", "Tailwind"],
     liveUrl: "https://ghana-paye-calculator.vercel.app/",
     repoUrl: "https://github.com/MrrAmissah/Ghana-Paye-Calculator",
-    image: "/projects/ghana-paye-calculator.png",
+    images: ["/projects/ghana-paye-calculator.png"],
     accent: "Ghana finance",
   },
   {
@@ -73,7 +79,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Vite", "Tailwind"],
     liveUrl: "https://ghs-fx-converter.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/GHS-FX-Converter",
-    image: "/projects/ghs-fx-converter.png",
+    images: ["/projects/ghs-fx-converter.png"],
     accent: "Live API",
   },
   {
@@ -83,7 +89,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Prisma", "Neon", "Tailwind"],
     liveUrl: "https://snipnow.vercel.app",
     repoUrl: "https://github.com/MrrAmissah/Link-Shortener",
-    image: "/projects/snip.png",
+    images: ["/projects/snip.png"],
     accent: "Full stack",
   },
 ];

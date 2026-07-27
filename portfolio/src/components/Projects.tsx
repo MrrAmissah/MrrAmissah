@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github, Lock, Wrench } from "lucide-react";
 import { inProgressProjects, projects } from "@/lib/projects";
+import { ProjectGallery } from "./ProjectGallery";
 import { Section } from "./Section";
 
 /**
@@ -46,21 +47,11 @@ export function Projects() {
               <div
                 className={`relative ${flipped ? "lg:order-2" : "lg:order-1"}`}
               >
-                {/* Tilted card that straightens on hover. */}
-                <div
-                  className={`relative aspect-[16/10] overflow-hidden rounded-2xl border border-line-strong bg-surface shadow-2xl transition-transform duration-500 ease-out group-hover:rotate-0 ${
-                    flipped ? "rotate-2" : "-rotate-2"
-                  }`}
-                >
-                  <Image
-                    src={project.image}
-                    alt={`${project.title} preview`}
-                    fill
-                    sizes="(min-width: 1024px) 32rem, 100vw"
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
-                  />
-                </div>
-
+                <ProjectGallery
+                  images={project.images}
+                  title={project.title}
+                  flipped={flipped}
+                />
               </div>
 
               <div className={flipped ? "lg:order-1" : "lg:order-2"}>
