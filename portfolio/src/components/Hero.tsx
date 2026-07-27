@@ -8,7 +8,14 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+} from "lucide-react";
 import { Terminal } from "./Terminal";
 
 const socials = [
@@ -46,7 +53,7 @@ export function Hero() {
     <section
       ref={ref}
       id="top"
-      className="relative isolate flex min-h-[100svh] flex-col justify-center overflow-hidden px-5 pb-14 pt-24 sm:px-8"
+      className="relative isolate flex min-h-[100svh] flex-col justify-center overflow-hidden px-5 pb-12 pt-20 sm:px-8 sm:pb-14 sm:pt-24"
     >
       {/* Portrait bleeds off the right edge on wide screens and melts into the
           canvas through the gradient scrim layered over it. */}
@@ -81,9 +88,9 @@ export function Hero() {
           <motion.div
             variants={rise}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-10 lg:hidden"
+            className="mb-8 lg:hidden"
           >
-            <div className="relative aspect-[4/5] w-40 -rotate-3 overflow-hidden rounded-2xl border border-line-strong bg-surface shadow-2xl sm:w-48">
+            <div className="relative aspect-[4/5] w-44 -rotate-3 overflow-hidden rounded-2xl border border-line-strong bg-surface shadow-2xl sm:w-52">
               <Image
                 src="/prince-portrait.jpg"
                 alt="Prince Kofi Frimpong Amissah"
@@ -98,15 +105,18 @@ export function Hero() {
           <motion.p
             variants={rise}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-wrap items-center gap-x-5 gap-y-3 text-xs font-semibold uppercase tracking-[0.28em]"
+            className="flex flex-wrap items-center gap-x-4 gap-y-3"
           >
-            <span className="rounded-full border border-accent/45 px-4 py-2 text-accent">
+            <span className="rounded-full border border-accent/45 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Available for work
             </span>
-            <span className="text-dim">Accra, Ghana</span>
+            <span className="inline-flex items-center gap-1.5 text-sm text-dim">
+              <MapPin className="h-4 w-4" aria-hidden />
+              Accra, Ghana
+            </span>
           </motion.p>
 
-          <h1 className="mt-6 max-w-3xl font-display text-display font-extrabold text-text">
+          <h1 className="mt-5 max-w-3xl font-display text-display font-extrabold text-text sm:mt-6">
             <motion.span
               variants={rise}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
@@ -126,7 +136,7 @@ export function Hero() {
           <motion.p
             variants={rise}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-7 max-w-xl text-lg leading-8 text-dim sm:text-xl sm:leading-9"
+            className="mt-6 max-w-xl text-lg leading-8 text-dim sm:mt-7 sm:text-xl sm:leading-9"
           >
             Information Systems graduate, CCNA-trained network technician, and
             full-stack developer building{" "}
@@ -137,7 +147,7 @@ export function Hero() {
           <motion.div
             variants={rise}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 flex flex-wrap items-center gap-4"
+            className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4"
           >
             <a
               href="#work"

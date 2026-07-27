@@ -148,7 +148,9 @@ export function Featured() {
             Brand collateral
           </p>
 
-          <div className="grid gap-6 lg:grid-cols-2">
+          {/* Stacking two 3:1 cards on a phone makes each one tiny; swiping
+              keeps them legible. Falls back to a grid once there is width. */}
+          <div className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 sm:-mx-8 sm:px-8 lg:mx-0 lg:grid lg:grid-cols-2 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
             {[
               {
                 src: "/payguard-quote.png",
@@ -163,7 +165,7 @@ export function Featured() {
             ].map((item) => (
               <div
                 key={item.src}
-                className={`relative ${item.ratio} w-full overflow-hidden rounded-2xl border border-line-strong bg-white shadow-2xl`}
+                className={`relative ${item.ratio} w-[88%] shrink-0 snap-center overflow-hidden rounded-2xl border border-line-strong bg-white shadow-2xl sm:w-[70%] lg:w-full`}
               >
                 <Image
                   src={item.src}

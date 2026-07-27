@@ -62,7 +62,7 @@ export function Header() {
       >
         <nav
           aria-label="Primary navigation"
-          className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 sm:px-8"
+          className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8"
         >
           <a
             href="#top"
