@@ -3,12 +3,33 @@ export type Project = {
   description: string;
   stack: string[];
   liveUrl?: string;
-  repoUrl: string;
+  repoUrl?: string;
   image: string;
   accent: string;
 };
 
+/** Work with a public repo and (usually) a live deployment. */
 export const projects: Project[] = [
+  {
+    title: "PacketSage",
+    description:
+      "Evidence-grounded network forensics workspace for bounded packet analysis, with exact citations, AI-assisted investigation, incident timelines, and report building.",
+    stack: ["React", "TypeScript", "Vite", "Express", "Tailwind", "Gemini API"],
+    liveUrl: "https://packetsage.vercel.app",
+    repoUrl: "https://github.com/MrrAmissah/PacketSage",
+    image: "/projects/packetsage.jpg",
+    accent: "Network forensics",
+  },
+  {
+    title: "FraudCase Ghana",
+    description:
+      "AI-assisted fraud evidence organizer that helps individuals and small businesses collect, structure, analyze, and export scam-related evidence into a clean case report.",
+    stack: ["React", "TypeScript", "Vite", "Firebase", "Express", "Gemini API"],
+    liveUrl: "https://fraudcase-gh.vercel.app",
+    repoUrl: "https://github.com/MrrAmissah/fraudcase-gh",
+    image: "/projects/fraudcase.jpg",
+    accent: "Fraud evidence",
+  },
   {
     title: "Team Urbanflow",
     description:
@@ -64,5 +85,80 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/MrrAmissah/Link-Shortener",
     image: "/projects/snip.png",
     accent: "Full stack",
+  },
+];
+
+export type InProgressProject = {
+  title: string;
+  /** Short snippet describing the work without exposing anything private. */
+  description: string;
+  stack: string[];
+  /** Optional logo path. Falls back to a monogram built from the title. */
+  logo?: string;
+  /** e.g. "In development", "Client work", "Under NDA". */
+  status: string;
+  /** Set when the repo is public but there is no live deployment yet. */
+  repoUrl?: string;
+};
+
+/**
+ * Work that is built but not yet deployed. Rendered with a monogram or logo
+ * instead of a screenshot, so the work is visible even without a live link.
+ *
+ * Add entries here as they come. Only list projects that actually have code —
+ * an empty repo shown here reads worse than not listing it at all.
+ */
+export const inProgressProjects: InProgressProject[] = [
+  {
+    title: "PayGuard Payment Core",
+    // TODO(prince): reword if this over- or under-states what Payment Core covers.
+    description:
+      "The settlement engine behind PayGuard: escrow holds, payout orchestration, and the transaction audit trail that the rest of the platform is built on.",
+    stack: ["TypeScript", "Node.js", "PostgreSQL", "Prisma"],
+    logo: "/payguard-logo.svg",
+    status: "Private",
+  },
+  {
+    title: "LiveLayer",
+    description:
+      "Local-first broadcast graphics for OBS: a control dock and a transparent output overlay running entirely in the browser, for lower thirds, scripture, and announcements without a native plugin or an account.",
+    stack: ["React", "TypeScript", "Zustand", "Zod"],
+    status: "In development",
+    repoUrl: "https://github.com/MrrAmissah/Live-Layer",
+  },
+
+  /*
+   * The four below are scaffolded repos with no code yet. Descriptions and
+   * stacks are inferred from the repo names, NOT from an implementation.
+   * TODO(prince): rewrite each in your own words before launch, and move to
+   * "In development" with a repoUrl once there is something to show.
+   */
+  {
+    title: "VendorVerify",
+    description:
+      "Lightweight vendor due-diligence for Ghanaian online trade: check a seller's identity and trading history before money changes hands, so buyers can judge who they are dealing with.",
+    stack: ["Next.js", "TypeScript", "PostgreSQL"],
+    status: "Early concept",
+  },
+  {
+    title: "ReceiptOps",
+    description:
+      "Receipt and expense workflow built around how Ghanaian small businesses actually record sales, reconcile payments, and produce clean records at the end of the month.",
+    stack: ["Next.js", "TypeScript", "PostgreSQL"],
+    status: "Early concept",
+  },
+  {
+    title: "Snip-Guard",
+    description:
+      "Link-safety layer for the Snip shortener: screen destinations for phishing and impersonation before a short link resolves, and flag suspicious redirects.",
+    stack: ["Next.js", "TypeScript", "Prisma"],
+    status: "Early concept",
+  },
+  {
+    title: "SME-IR-Copilot",
+    description:
+      "Incident-response assistant for small and medium businesses without a security team: triage what happened, capture evidence in order, and produce a report someone can act on.",
+    stack: ["Next.js", "TypeScript", "Node.js"],
+    status: "Early concept",
   },
 ];

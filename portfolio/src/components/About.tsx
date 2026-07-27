@@ -1,86 +1,103 @@
-import { CheckCircle2, Compass, ShieldCheck } from "lucide-react";
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Section } from "./Section";
+import { RevealWords } from "./RevealWords";
 
 const workingStyle = [
   {
     title: "Start from the real workflow",
     description:
       "I map how people actually move through a task before choosing the interface.",
-    Icon: Compass,
   },
   {
     title: "Make the logic visible",
     description:
       "Calculations, states, and edge cases should be easy to inspect and trust.",
-    Icon: ShieldCheck,
   },
   {
     title: "Ship in useful steps",
     description:
       "I prefer clean, working increments over oversized rewrites that delay feedback.",
-    Icon: CheckCircle2,
   },
 ];
 
 export function About() {
   return (
-    <section
+    <Section
       id="about"
-      className="mx-auto grid w-full max-w-6xl gap-7 px-5 py-7 sm:px-8 sm:py-10 md:grid-cols-[1fr_0.72fr] md:items-start"
+      index="02"
+      eyebrow="About"
+      title="Where infrastructure meets"
+      accentTitle="the things people actually use."
+      align="center"
     >
-      <div>
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-          About
-        </p>
-        <h2 className="mt-3 text-3xl font-semibold text-balance text-ink sm:text-4xl dark:text-paper">
-          I build practical systems with a clear eye for local context.
-        </h2>
-        <div className="mt-6 space-y-4 text-base leading-8 text-ink/72 dark:text-paper/72">
+      <RevealWords
+        text="I build practical systems with a clear eye for local context: calculators, dashboards, fintech tools, and network-aware products."
+        highlight={["practical", "systems", "local", "context"]}
+        className="mx-auto max-w-4xl justify-center text-center font-display text-statement font-bold leading-tight text-text"
+      />
+
+      <div className="mt-20 grid gap-12 border-t border-line pt-12 md:grid-cols-[0.8fr_1fr] md:gap-16">
+        <div>
+          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-line-strong bg-surface shadow-2xl">
+            <Image
+              src="/prince-speaking.jpg"
+              alt="Prince speaking at the Accra Stablecoin Conference"
+              fill
+              sizes="(min-width: 768px) 24rem, 100vw"
+              className="object-cover object-center"
+            />
+          </div>
+          <p className="mt-5 font-display text-xl font-bold text-accent">
+            Prince Kofi Frimpong Amissah
+          </p>
+          <p className="mt-1.5 text-sm uppercase tracking-[0.2em] text-dim">
+            Accra, Ghana
+          </p>
+        </div>
+
+        <div className="space-y-5 self-center text-lg leading-8 text-dim">
           <p>
             I am an Information Systems graduate based in Accra, Ghana, with
             hands-on training in networking, software development, and practical
             digital systems.
           </p>
           <p>
-            My work sits where infrastructure, software, and real user needs
-            meet — from calculators and dashboards to fintech tools and
-            network-aware products.
-          </p>
-          <p>
+            My work sits where infrastructure, software, and real user needs meet.
             I am comfortable across TypeScript, React, Next.js, Node.js,
-            PostgreSQL, Prisma, Tailwind, Git, and networking fundamentals, with
-            a focus on building tools that are useful, clear, and reliable.
+            PostgreSQL, Prisma, Tailwind, Git, and networking fundamentals, with a
+            focus on building tools that are{" "}
+            <span className="text-text">useful, clear, and reliable.</span>
           </p>
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-lg border border-line bg-surface shadow-sm dark:bg-surface md:mt-10">
-        <div className="bg-navy px-5 py-4 text-white">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan">
-            HOW I BUILD
-          </p>
-          <p className="mt-2 text-sm leading-6 text-white/78">
-            Practical, trust-first, and designed around the next decision a
-            user needs to make.
-          </p>
-        </div>
-        <div className="divide-y divide-line">
-          {workingStyle.map(({ title, description, Icon }) => (
-            <div key={title} className="flex gap-3 px-5 py-4">
-              <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-accent/10 text-accent">
-                <Icon className="h-5 w-5" />
-              </span>
-              <div>
-                <h3 className="text-sm font-semibold text-ink dark:text-paper">
-                  {title}
-                </h3>
-                <p className="mt-1 text-sm leading-6 text-ink/64 dark:text-paper/64">
-                  {description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3">
+        {workingStyle.map(({ title, description }, i) => (
+          <motion.div
+            key={title}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{
+              duration: 0.6,
+              delay: i * 0.08,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="bg-bg p-8 transition-colors duration-300 hover:bg-surface"
+          >
+            <span className="font-mono text-xs text-accent">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <h3 className="mt-4 font-display text-xl font-bold text-text">
+              {title}
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-dim">{description}</p>
+          </motion.div>
+        ))}
       </div>
-    </section>
+    </Section>
   );
 }
