@@ -60,6 +60,31 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
     </td>
   </tr>
   <tr>
+    <td colspan="2">
+      <!--
+        Nested table on purpose: column widths in an HTML table are shared
+        across rows, so a 42/58 split at this level would have shifted every
+        50/50 project row below. Nested widths stay local.
+      -->
+      <table>
+        <tr>
+          <td width="44%" valign="top">
+            <img src="./assets/projects/keyhole-mark.png" alt="" width="72" />
+            <h3>Keyhole</h3>
+            <p><strong>Private repository &middot; in active development</strong></p>
+            <p>A self-hosted OpenID Connect identity provider with its own login screen, so applications authenticate against infrastructure I run instead of a third-party auth service. Argon2id credentials, TOTP two-factor with single-use recovery codes, Google sign-in, step-up re-authentication, per-IP and per-account rate limiting, and revocable sessions — with an audit trail behind all of it.</p>
+            <p>Built deliberately: the OAuth2/OIDC protocol layer is a certified library, while identity storage, credential verification, lockout, and the interface are mine. Security properties are tested adversarially — account enumeration, token replay, pre-hijacking on account linking, and 2FA bypass each have a test asserting they fail.</p>
+            <p><em>Not yet independently reviewed. No public code or demo while that is true.</em></p>
+            <p><code>TypeScript</code> <code>Node.js</code> <code>PostgreSQL</code> <code>OpenID Connect</code> <code>OAuth 2.0</code> <code>React</code> <code>Argon2id</code> <code>TOTP</code></p>
+          </td>
+          <td width="56%" valign="top">
+            <img src="./assets/projects/keyhole-login.png" alt="Keyhole sign-in screen: Continue with Google, email and password fields, and links to password reset and account creation" width="100%" />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
     <td width="50%">
       <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png?v=2026-07-30" alt="FraudCase GH preview" width="100%" />
       <h3>FraudCase GH</h3>
