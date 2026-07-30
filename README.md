@@ -60,6 +60,16 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
     </td>
   </tr>
   <tr>
+    <td colspan="2">
+      <img src="./assets/projects/keyhole-preview.png" alt="Keyhole: a self-hosted OpenID Connect identity provider, shown beside its sign-in screen with Continue with Google, email and password fields" width="100%" />
+      <h3>Keyhole</h3>
+      <p>A self-hosted OpenID Connect identity provider with its own login screen, so applications authenticate against infrastructure I run instead of a third-party auth service. Argon2id credentials, TOTP two-factor with single-use recovery codes, Google sign-in with pre-hijacking-safe account linking, step-up re-authentication, per-IP and per-account rate limiting, and revocable sessions — with an append-only audit trail behind all of it.</p>
+      <p>Built deliberately: the OAuth2/OIDC protocol layer is a certified library, while identity storage, credential verification, lockout, second factors, and the interface are mine. Security properties are tested adversarially — account enumeration, token replay, 2FA bypass, and orphaned sessions after account deletion each have a test asserting they fail.</p>
+      <p><strong>Private repository &middot; in active development.</strong> <em>Not yet independently reviewed, so there is no public code or demo while that remains true.</em></p>
+      <p><code>TypeScript</code> <code>Node.js</code> <code>PostgreSQL</code> <code>OpenID Connect</code> <code>OAuth 2.0</code> <code>React</code> <code>Argon2id</code> <code>TOTP</code></p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%">
       <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png?v=2026-07-30" alt="FraudCase GH preview" width="100%" />
       <h3>FraudCase GH</h3>
