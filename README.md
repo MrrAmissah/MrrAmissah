@@ -61,7 +61,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
   </tr>
   <tr>
     <td width="50%">
-      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png" alt="FraudCase GH preview" width="100%" />
+      <img src="https://raw.githubusercontent.com/MrrAmissah/fraudcase-gh/main/docs/screenshots/landing.png?v=2026-07-30" alt="FraudCase GH preview" width="100%" />
       <h3>FraudCase GH</h3>
       <p>A privacy-first, AI-assisted tool that turns scattered scam evidence (SMS, WhatsApp, links, Mobile Money receipts) into a structured case file with PII redaction, risk scoring, timelines, and PDF reports.</p>
       <p>
