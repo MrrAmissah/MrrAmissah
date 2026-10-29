@@ -8,7 +8,7 @@ Most people call me **Kofi**.
 
 **Cybersecurity · Network & Infrastructure Security · Full-Stack Engineering**
 
-Founder & CEO, [PayGuard](https://payguardgh.com) · MSc Cybersecurity candidate, Academic City University · CCNA-trained
+Founder & CEO, [PayGuard](https://payguardgh.com) · MSc Cybersecurity student, Academic City University · CCNA-trained
 
 Accra, Ghana
 
