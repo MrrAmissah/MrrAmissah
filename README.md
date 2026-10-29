@@ -6,7 +6,9 @@
 
 Most people call me **Kofi**.
 
-**Information Systems · Networking & IT Infrastructure · Full-Stack Developer**
+**Cybersecurity · Network & Infrastructure Security · Full-Stack Engineering**
+
+Founder & CEO, [PayGuard](https://payguardgh.com) · MSc Cybersecurity candidate, Academic City University · CCNA-trained
 
 Accra, Ghana
 
@@ -19,9 +21,16 @@ Accra, Ghana
 
 ## About Me
 
-I am **Prince Kofi Frimpong Amissah**, an Information Systems graduate and CCNA-trained network technician building practical software for infrastructure, finance, and everyday Ghanaian workflows.
+I am **Prince Kofi Frimpong Amissah**, a cybersecurity-focused engineer and the founder and CEO of **PayGuard**, an escrow-protected commerce platform for Ghana. I am an Information Systems graduate, CCNA-trained, and studying for an **MSc in Cybersecurity at Academic City University** in Accra.
 
-I like tools that make complicated things easier to trust: packet analysis, subnetting, payroll, exchange rates, escrow flows, and full-stack products that feel useful outside a tutorial.
+My work sits where security, networks and payments meet:
+- **Network security and forensics:** PacketSage reconstructs flows from Wireshark, Suricata and Zeek data and flags suspicious signals.
+- **Identity and access:** Keyhole is a self-hosted OpenID Connect provider with two-factor authentication, rate limiting and an audit trail.
+- **Fraud and payments:** FraudCase GH turns scam evidence into case files, and PayGuard's payment engine records every movement of money in a double-entry ledger.
+
+A payments business is a security business, so I build that way.
+
+My MSc covers information security assurance and risk management (ISO/IEC 27001, NIST CSF, business continuity) and network and enterprise systems security (layered network defence, firewalls and intrusion detection, enterprise identity and access management).
 
 Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**, **Node.js**, **PostgreSQL/Prisma**, **Tailwind CSS**, and networking fundamentals.
 
@@ -30,16 +39,16 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 <table>
   <tr>
     <td width="33%">
-      <strong>Ghana-focused utilities</strong><br />
-      PAYE, FX, payments, and tools that match local workflows.
+      <strong>Cybersecurity</strong><br />
+      Network security and forensics, identity and access, risk and assurance.
     </td>
     <td width="33%">
-      <strong>Full-stack products</strong><br />
-      Auth, databases, analytics, deployment, and clean UI flows.
+      <strong>PayGuard</strong><br />
+      Escrow-protected payments for online trade in Ghana: built and tested, pilot next.
     </td>
     <td width="33%">
-      <strong>Networking & security</strong><br />
-      Network forensics, subnetting, IT support, and systems thinking.
+      <strong>Full-stack and Ghana tools</strong><br />
+      Secure auth, databases and deployment; PAYE, FX and local workflows.
     </td>
   </tr>
 </table>
@@ -47,6 +56,14 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 ## Featured Projects
 
 <table>
+  <tr>
+    <td colspan="2">
+      <h3>PayGuard · Founder & CEO</h3>
+      <p>Escrow-protected commerce for Ghana's online buyers and sellers. Every online sale in Ghana starts with the same question: who pays first? With PayGuard, the buyer pays, a licensed financial partner holds the money, and the seller is paid when delivery is confirmed. I designed and built the platform and its payment engine, including its double-entry ledger and the dispute and evidence flows. PayGuard Ltd is registered in Ghana and is pre-launch, with a seller pilot next.</p>
+      <p><strong>Private repository.</strong> <a href="https://payguardgh.com">payguardgh.com</a></p>
+      <p><code>Fintech</code> <code>Escrow</code> <code>Payments Security</code> <code>Double-Entry Ledger</code> <code>TypeScript</code></p>
+    </td>
+  </tr>
   <tr>
     <td colspan="2">
       <img src="https://raw.githubusercontent.com/MrrAmissah/PacketSage/main/docs/assets/packetsage-command-center.png" alt="PacketSage command center showing decoded packet evidence, protocol stats, signal counts, and investigation brief" width="100%" />
@@ -174,6 +191,8 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
   <img src="https://skillicons.dev/icons?i=ts,react,nextjs,nodejs,postgres,prisma,tailwind,git,github,vercel,vite" alt="TypeScript, React, Next.js, Node.js, PostgreSQL, Prisma, Tailwind CSS, Git, GitHub, Vercel, and Vite" />
 </p>
 
+**Security and networking:** Wireshark, Suricata and Zeek log analysis · Cisco routing and switching (CCNA) · OpenID Connect and OAuth 2.0 · Argon2id and TOTP · ISO/IEC 27001 risk assessment · NIST CSF
+
 ## GitHub Snapshot
 
 <div align="center">
@@ -187,7 +206,7 @@ Right now I am sharpening my work across **TypeScript**, **React**, **Next.js**,
 
 ## Contact
 
-I am open to junior full-stack, IT support, networking, and product-building opportunities where practical systems matter.
+I am open to cybersecurity, network security and full-stack opportunities, and to conversations with partners and investors about PayGuard.
 
 - Portfolio: [prince-kofi-amissah.vercel.app](https://prince-kofi-amissah.vercel.app)
 - LinkedIn: [linkedin.com/in/prince-kofi-frimpong-amissah](https://www.linkedin.com/in/prince-kofi-frimpong-amissah/)

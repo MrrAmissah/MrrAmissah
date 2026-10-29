@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     template: "%s | Prince Kofi F. Amissah",
   },
   description:
-    "Information Systems graduate, CCNA-trained network technician, and full-stack developer based in Accra, Ghana.",
+    "Cybersecurity-focused engineer and founder & CEO of PayGuard, studying for an MSc in Cybersecurity at Academic City University. CCNA-trained, Information Systems graduate and full-stack developer based in Accra, Ghana.",
   openGraph: {
     title: "Prince Kofi F. Amissah | Portfolio",
     description:
-      "Information Systems, networking, IT infrastructure, and full-stack projects built for practical Ghanaian use cases.",
+      "Cybersecurity, network security and full-stack projects, and PayGuard: escrow-protected commerce for Ghana.",
     url: "/",
     siteName: "Prince Kofi F. Amissah",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Prince Kofi F. Amissah | Portfolio",
     description:
-      "Information Systems, networking, IT infrastructure, and full-stack projects.",
+      "Cybersecurity, network security and full-stack projects, and PayGuard.",
     images: ["/og-image.png"],
   },
   icons: {
